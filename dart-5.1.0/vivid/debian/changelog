@@ -1,4 +1,4 @@
-dart (5.1.0.ppa2~vivid) vivid; urgency=medium
+dart (5.1.0.ppa4~vivid) vivid; urgency=medium
 
   * Fixed incorrect rotational motion of BallJoint and FreeJoint
   * Removed old documents: dart-tutorial, programmingGuide
