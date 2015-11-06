@@ -1,4 +1,4 @@
-dart (5.1.1.ppa4~trusty) trusty; urgency=medium
+dart (5.1.1.ppa2~wily) wily; urgency=medium
 
   * Add bullet dependency to package.xml
   * Improved handling of missing symbols of Assimp package
