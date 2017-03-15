@@ -1,4 +1,12 @@
-dart6 (6.1.2-1~trusty) trusty; urgency=medium
+dart6 (6.2.0.ppa1~trusty) trusty; urgency=medium
+
+  * Added support of ODE collision detector
+  * Added MotionBlurSimWindow
+  * Fixed various bugs
+
+ -- Jeongseok Lee <jslee02@gmail.com>  Mon, 15 May 2017 23:59:00 -0500
+
+dart6 (6.1.2) unstable; urgency=medium
 
   * Fixed bug of ContactConstraint with kinematic joints
   * Fixed that ZeroDofJoint::getIndexInTree was called
