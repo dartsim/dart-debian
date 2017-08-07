@@ -18,3 +18,5 @@ usr/share/dart/cmake/DARTConfigVersion.cmake
 usr/share/dart/cmake/dart_dartTargets.cmake
 usr/share/dart/cmake/dart_dartTargets-*.cmake
 usr/share/dart/cmake/dart_dartComponent.cmake
+usr/share/doc/dart/*
+
