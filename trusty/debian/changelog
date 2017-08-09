@@ -11,9 +11,9 @@ dart6 (6.2.1.ppa1~trusty) trusty; urgency=medium
   * Fixed missing overriding method OdePlane::isPlaceable()
   * Replaced use of enum by static constexpr
 
- -- Jeongseok Lee <jslee02@gmail.com>  Tue, 08 Aug 2017 23:59:00 -0700
+ -- Jeongseok Lee <jslee02@gmail.com>  Tue, 08 Aug 2017 23:59:00 -0800
 
-dart6 (6.2.0.ppa1~trusty) trusty; urgency=medium
+dart6 (6.2.0) unstable; urgency=medium
 
   * Added support of ODE collision detector
   * Added MotionBlurSimWindow
