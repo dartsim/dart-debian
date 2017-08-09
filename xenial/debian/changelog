@@ -1,4 +1,27 @@
-dart6 (6.1.2-1~xenial) xenial; urgency=medium
+dart6 (6.2.1.ppa1~xenial) xenial; urgency=medium
+
+  * Fixed collision checking between objects from the same body node
+  * Fixed transform of ScrewJoint with thread pitch
+  * Fixed incorrect reading of <use_parent_model_frame> from SDF
+  * Fixed missing reading of joint friction from URDF
+  * Fixed testing ODE collision detector on macOS
+  * Removed redundant main body for each test source file
+  * Fixed build of dart-gui-osg that depends on the presence of OSG
+  * Fixed build of examples and tutorials on macOS
+  * Fixed missing overriding method OdePlane::isPlaceable()
+  * Replaced use of enum by static constexpr
+
+ -- Jeongseok Lee <jslee02@gmail.com>  Tue, 08 Aug 2017 23:59:00 -0700
+
+dart6 (6.2.0.ppa1~trusty) trusty; urgency=medium
+
+  * Added support of ODE collision detector
+  * Added MotionBlurSimWindow
+  * Fixed various bugs
+
+ -- Jeongseok Lee <jslee02@gmail.com>  Mon, 15 May 2017 23:59:00 -0500
+
+dart6 (6.1.2) unstable; urgency=medium
 
   * Fixed bug of ContactConstraint with kinematic joints
   * Fixed that ZeroDofJoint::getIndexInTree was called
