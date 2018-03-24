@@ -16,5 +16,11 @@ override_dh_auto_configure:
 override_dh_auto_build:
 	dh_auto_build -- tests
 
+override_dh_compress:
+	dh_compress \
+	    -X.dae -X.obj -X.stl -X.STL \
+		-X.sdf -X.skel -X.urdf -X.vsk -X.world \
+		-X.c3d -X.changelog -X.dof -X.path -X.tris
+
 %:
 	dh $@
