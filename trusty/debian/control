@@ -27,6 +27,15 @@ Homepage: http://dartsim.github.io/
 Vcs-Git: git://github.com/dartsim/dart.git
 Vcs-Browser: https://github.com/dartsim/dart
 
+Package: libdart6-external-ikfast-dev
+Section: libdevel
+Architecture: any
+Pre-Depends: ${misc:Pre-Depends}
+Depends: ${misc:Depends}
+Description: IKFast - Development
+ Header file for all ikfast c++ files/shared objects. The ikfast inverse
+ kinematics compiler is part of OpenRAVE.
+
 Package: libdart6-external-imgui
 Section: libs
 Architecture: any
@@ -130,6 +139,7 @@ Pre-Depends: ${misc:Pre-Depends}
 Conflicts: libdart-core3-dev, libdart-core4-dev, libdart-core5-dev
 Depends: ${misc:Depends},
          libdart6 (= ${binary:Version}),
+         libdart6-external-ikfast-dev,
          libdart6-external-odelcpsolver-dev,
          libeigen3-dev,
          libassimp-dev (>= 3),
