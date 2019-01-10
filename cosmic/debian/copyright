@@ -5,9 +5,9 @@ Source: http://github.com/dartsim/dart
 Files: *
 Copyright: 2011-2016, Humanoid Lab, Georgia Tech Research Corporation
            2016-2017, Personal Robotics Lab, Carnegie Mellon University
-           2011-2017, Graphics Lab, Georgia Tech Research Corporation
-           2017, Personal Robotics Lab, University of Washington
-           2017, Open Source Robotics Foundation
+           2011-2019, Graphics Lab, Georgia Tech Research Corporation
+           2017-2019, Personal Robotics Lab, University of Washington
+           2017-2019, Open Source Robotics Foundation
 License: BSD-2-clause
  Redistribution and use in source and binary forms, with or without
  modification, are permitted provided that the following conditions
