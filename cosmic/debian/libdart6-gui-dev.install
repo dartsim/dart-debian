@@ -3,4 +3,3 @@ usr/lib/libdart-gui.so
 usr/share/dart/cmake/dart_guiTargets.cmake
 usr/share/dart/cmake/dart_guiTargets-*.cmake
 usr/share/dart/cmake/dart_guiComponent.cmake
-

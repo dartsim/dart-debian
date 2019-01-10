@@ -3,4 +3,3 @@ usr/lib/libdart-external-lodepng.so
 usr/share/dart/cmake/dart_external-lodepngTargets.cmake
 usr/share/dart/cmake/dart_external-lodepngTargets-*.cmake
 usr/share/dart/cmake/dart_external-lodepngComponent.cmake
-

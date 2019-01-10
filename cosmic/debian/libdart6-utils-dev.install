@@ -4,4 +4,3 @@ usr/lib/libdart-utils.so
 usr/share/dart/cmake/dart_utilsTargets.cmake
 usr/share/dart/cmake/dart_utilsTargets-*.cmake
 usr/share/dart/cmake/dart_utilsComponent.cmake
-

@@ -3,4 +3,3 @@ usr/lib/libdart-collision-bullet.so
 usr/share/dart/cmake/dart_collision-bulletTargets.cmake
 usr/share/dart/cmake/dart_collision-bulletTargets-*.cmake
 usr/share/dart/cmake/dart_collision-bulletComponent.cmake
-
