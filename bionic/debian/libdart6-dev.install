@@ -12,7 +12,7 @@ usr/include/dart/lcpsolver/*
 usr/include/dart/math/*
 usr/include/dart/optimizer/*.*
 usr/include/dart/simulation/*
-usr/lib/libdart.so
+usr/lib/*/libdart.so
 usr/share/dart/cmake/DARTConfig.cmake
 usr/share/dart/cmake/DARTConfigVersion.cmake
 usr/share/dart/cmake/dart_dartTargets.cmake

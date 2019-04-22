@@ -1,5 +1,5 @@
 usr/include/dart/gui/glut/*
-usr/lib/libdart-gui-glut.so
+usr/lib/*/libdart-gui-glut.so
 usr/share/dart/cmake/dart_gui-glutTargets.cmake
 usr/share/dart/cmake/dart_gui-glutTargets-*.cmake
 usr/share/dart/cmake/dart_gui-glutComponent.cmake
