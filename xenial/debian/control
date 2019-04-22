@@ -24,7 +24,8 @@ Build-Depends: debhelper (>= 9),
                libboost-regex-dev (>= 1.54.0-4ubuntu3),
                liboctomap-dev,
                libopenthreads-dev,
-               libopenscenegraph-dev
+               libopenscenegraph-dev,
+               liblz4-dev
 Standards-Version: 3.9.8
 Section: libs
 Homepage: http://dartsim.github.io/
@@ -455,7 +456,8 @@ Pre-Depends: ${misc:Pre-Depends}
 Depends: ${misc:Depends},
          libdart6-dev,
          libdart6-planning (= ${binary:Version}),
-         libflann-dev
+         libflann-dev,
+         liblz4-dev
 Description: Dynamic Animation and Robotics Toolkit - Planning Component Development Files
  DART is a collaborative, cross-platform, open source library created by the
  Georgia Tech Graphics Lab and Humanoid Robotics Lab. The library provides data
