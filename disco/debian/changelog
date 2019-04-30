@@ -1,3 +1,9 @@
+dart6 (6.8.2-1~disco) disco; urgency=medium
+
+  * dart6 6.8.2-1 release
+
+ -- Jeongseok Lee <jslee02@gmail.com>  Tue, 30 Apr 2019 05:29:45 -0700
+
 dart6 (6.8.2-0~disco) disco; urgency=medium
 
   * dart6 6.8.2-0 release
