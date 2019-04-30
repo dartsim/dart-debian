@@ -1,4 +1,5 @@
 usr/include/dart/gui/*.*
+usr/include/dart/gui/glut/*.*
 usr/lib/*/libdart-gui.so
 usr/share/dart/cmake/dart_guiTargets.cmake
 usr/share/dart/cmake/dart_guiTargets-*.cmake
