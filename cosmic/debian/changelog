@@ -1,3 +1,9 @@
+dart6 (6.8.4-0~cosmic) cosmic; urgency=medium
+
+  * dart6 6.8.4-0 release
+
+ -- Jeongseok Lee <jslee02@gmail.com>  Fri, 03 May 2019 16:43:06 -0700
+
 dart6 (6.8.3-0~cosmic) cosmic; urgency=medium
 
   * dart6 6.8.3-0 release
