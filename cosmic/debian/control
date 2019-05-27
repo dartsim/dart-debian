@@ -840,6 +840,7 @@ Architecture: any
 Depends: ${misc:Depends},
          ${python:Depends},
          ${shlibs:Depends},
+         dart6-data,
          python-numpy,
          python
 Description: Python bindings for the Dynamic Animation and Robotics Toolkit - Shared Library
@@ -851,6 +852,7 @@ Architecture: any
 Depends: ${misc:Depends},
          ${python:Depends},
          ${shlibs:Depends},
+         dart6-data,
          python3-numpy,
          python3
 Description: Python bindings for the Dynamic Animation and Robotics Toolkit - Shared Library
