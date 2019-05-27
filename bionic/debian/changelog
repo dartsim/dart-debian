@@ -1,3 +1,9 @@
+dart6 (6.9.0-0~bionic) bionic; urgency=medium
+
+  * dart6 6.9.0-0 release
+
+ -- Jeongseok Lee <jslee02@gmail.com>  Sun, 26 May 2019 19:57:14 -0700
+
 dart6 (6.8.5-0~bionic) bionic; urgency=medium
 
   * dart6 6.8.5-0 release
