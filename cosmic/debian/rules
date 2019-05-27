@@ -38,6 +38,7 @@ override_dh_auto_install:
 	dh_auto_configure -- \
 		-DCMAKE_BUILD_TYPE:STRING=RelWithDebInfo -DDARTPY_PYTHON_VERSION=3 \
 		-DDART_BUILD_DARTPY=ON -DDART_VERBOSE=ON
+	dh_auto_build -- dartpy
 	dh_auto_build -- pytest
 	dh_auto_install
 	# dartpy (Python 2)
@@ -45,6 +46,7 @@ override_dh_auto_install:
 	dh_auto_configure -- \
 		-DCMAKE_BUILD_TYPE:STRING=RelWithDebInfo -DDARTPY_PYTHON_VERSION=2 \
 		-DDART_BUILD_DARTPY=ON -DDART_VERBOSE=ON
+	dh_auto_build -- dartpy
 	dh_auto_build -- pytest
 	dh_auto_install
 
