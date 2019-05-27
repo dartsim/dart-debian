@@ -25,7 +25,18 @@ Build-Depends: debhelper (>= 9),
                liboctomap-dev,
                libopenthreads-dev,
                libopenscenegraph-dev,
-               liblz4-dev
+               liblz4-dev,
+               python-dev,
+               python3-dev,
+               python-numpy,
+               python3-numpy,
+               pybind11-dev,
+               python-pytest,
+               python3-pytest,
+               python,
+               python3,
+               libpython-dev,
+               libpython3-dev
 Standards-Version: 3.9.8
 Section: libs
 Homepage: http://dartsim.github.io/
@@ -823,6 +834,28 @@ Description: Dynamic Animation and Robotics Toolkit - GUI-osg Component Developm
  .
  This package contains tutorials from the DART source.
 
+Package: python-dartpy
+Section: libs
+Architecture: any
+Depends: ${misc:Depends},
+         ${python:Depends},
+         ${shlibs:Depends},
+         python-numpy,
+         python
+Description: Python bindings for the Dynamic Animation and Robotics Toolkit - Shared Library
+ Python bindings for the Dynamic Animation and Robotics Toolkit.
+
+Package: python3-dartpy
+Section: libs
+Architecture: any
+Depends: ${misc:Depends},
+         ${python:Depends},
+         ${shlibs:Depends},
+         python3-numpy,
+         python3
+Description: Python bindings for the Dynamic Animation and Robotics Toolkit - Shared Library
+ Python bindings for the Dynamic Animation and Robotics Toolkit.
+
 Package: libdart6-all-dev
 Section: libdevel
 Architecture: any
@@ -840,7 +873,9 @@ Depends: ${misc:Depends},
          libdart6-collision-ode-dev,
          dart6-data,
          dart6-examples,
-         dart6-tutorials
+         dart6-tutorials,
+         python-dartpy,
+         python3-dartpy
 Description: Dynamic Animation and Robotics Toolkit - All Development Files
  DART is a collaborative, cross-platform, open source library created by the
  Georgia Tech Graphics Lab and Humanoid Robotics Lab. The library provides data

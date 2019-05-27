@@ -10,19 +10,43 @@
 export DH_VERBOSE=1
 
 override_dh_auto_configure:
-	dh_auto_configure -- \
-	    -DCMAKE_BUILD_TYPE:STRING=RelWithDebInfo \
-	    -DDART_VERBOSE=ON
+	echo 'skipping configure'
 
 override_dh_auto_build:
-	dh_auto_build -- tests
+	echo 'skipping build'
+
+override_dh_auto_test:
+	echo 'skipping test'
 
 override_dh_compress:
 	dh_compress \
-	    -X.hpp -X.h -X.c -X.cpp \
-	    -X.dae -X.obj -X.stl -X.STL \
-	    -X.sdf -X.skel -X.urdf -X.vsk -X.world \
-	    -X.c3d -X.changelog -X.dof -X.path -X.tris
+		-X.hpp -X.h -X.c -X.cpp \
+		-X.dae -X.obj -X.stl -X.STL \
+		-X.sdf -X.skel -X.urdf -X.vsk -X.world \
+		-X.c3d -X.changelog -X.dof -X.path -X.tris
+
+override_dh_auto_install:
+	# DART
+	dh_auto_configure -- \
+		-DCMAKE_BUILD_TYPE:STRING=RelWithDebInfo \
+		-DDART_BUILD_DARTPY=OFF -DDART_VERBOSE=ON
+	dh_auto_build -- tests
+	dh_auto_test
+	dh_auto_install
+	# dartpy (Python 3)
+	rm -rf obj-*-linux-gnu
+	dh_auto_configure -- \
+		-DCMAKE_BUILD_TYPE:STRING=RelWithDebInfo -DDARTPY_PYTHON_VERSION=3 \
+		-DDART_BUILD_DARTPY=ON -DDART_VERBOSE=ON
+	dh_auto_build -- pytest
+	dh_auto_install
+	# dartpy (Python 2)
+	rm -rf obj-*-linux-gnu
+	dh_auto_configure -- \
+		-DCMAKE_BUILD_TYPE:STRING=RelWithDebInfo -DDARTPY_PYTHON_VERSION=2 \
+		-DDART_BUILD_DARTPY=ON -DDART_VERBOSE=ON
+	dh_auto_build -- pytest
+	dh_auto_install
 
 %:
-	dh $@
+	dh $@ --buildsystem=cmake --parallel
