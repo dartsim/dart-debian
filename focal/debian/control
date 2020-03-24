@@ -27,12 +27,9 @@ Build-Depends: debhelper (>= 9),
                libopenscenegraph-dev,
                liblz4-dev,
                python3-dev,
-               python-numpy,
                python3-numpy,
                pybind11-dev,
-               python-pytest,
                python3-pytest,
-               python,
                python3,
                libpython3-dev
 Standards-Version: 3.9.8
