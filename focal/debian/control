@@ -26,7 +26,6 @@ Build-Depends: debhelper (>= 9),
                libopenthreads-dev,
                libopenscenegraph-dev,
                liblz4-dev,
-               python-dev,
                python3-dev,
                python-numpy,
                python3-numpy,
@@ -35,7 +34,6 @@ Build-Depends: debhelper (>= 9),
                python3-pytest,
                python,
                python3,
-               libpython-dev,
                libpython3-dev
 Standards-Version: 3.9.8
 Section: libs
@@ -834,18 +832,6 @@ Description: Dynamic Animation and Robotics Toolkit - GUI-osg Component Developm
  .
  This package contains tutorials from the DART source.
 
-Package: python-dartpy
-Section: libs
-Architecture: any
-Depends: ${misc:Depends},
-         ${python:Depends},
-         ${shlibs:Depends},
-         dart6-data,
-         python-numpy,
-         python
-Description: Python bindings for the Dynamic Animation and Robotics Toolkit - Shared Library
- Python bindings for the Dynamic Animation and Robotics Toolkit.
-
 Package: python3-dartpy
 Section: libs
 Architecture: any
@@ -876,7 +862,6 @@ Depends: ${misc:Depends},
          dart6-data,
          dart6-examples,
          dart6-tutorials,
-         python-dartpy,
          python3-dartpy
 Description: Dynamic Animation and Robotics Toolkit - All Development Files
  DART is a collaborative, cross-platform, open source library created by the
