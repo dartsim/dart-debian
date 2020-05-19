@@ -1,3 +1,9 @@
+dart6 (6.9.2-6~eoan) eoan; urgency=medium
+
+  * dart6 6.9.2-6 release
+
+ -- Jeongseok Lee <jslee02@gmail.com>  Mon, 18 May 2020 22:34:00 -0700
+
 dart6 (6.9.2-5~eoan) eoan; urgency=medium
 
   * dart6 6.9.2-5 release
