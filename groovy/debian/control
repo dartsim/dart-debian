@@ -43,6 +43,7 @@ Section: libdevel
 Architecture: any
 Pre-Depends: ${misc:Pre-Depends}
 Depends: ${misc:Depends}
+Conflicts: libdart6-external-ikfast-dev
 Description: IKFast - Development
  Header file for all ikfast c++ files/shared objects. The ikfast inverse
  kinematics compiler is part of OpenRAVE.
@@ -52,6 +53,7 @@ Section: libs
 Architecture: any
 Pre-Depends: ${misc:Pre-Depends}
 Depends: ${shlibs:Depends}, ${misc:Depends}
+Conflicts: libdart6-external-imgui
 Description: dear imgui (AKA ImGui) - Shared Files
  dear imgui (AKA ImGui), is a bloat-free graphical user interface library for
  C++. It outputs optimized vertex buffers that you can render anytime in your
@@ -64,6 +66,7 @@ Architecture: any
 Pre-Depends: ${misc:Pre-Depends}
 Depends: ${misc:Depends},
          libdart6-external-imgui-nightly (= ${binary:Version})
+Conflicts: libdart6-external-imgui-dev
 Description: dear imgui (AKA ImGui) - Development
  dear imgui (AKA ImGui), is a bloat-free graphical user interface library for
  C++. It outputs optimized vertex buffers that you can render anytime in your
@@ -75,6 +78,7 @@ Section: libs
 Architecture: any
 Pre-Depends: ${misc:Pre-Depends}
 Depends: ${shlibs:Depends}, ${misc:Depends}
+Conflicts: libdart6-external-lodepng
 Description: LodePNG - Shared Files
  LodePNG is a PNG image decoder and encoder, all in one, no dependency or
  linkage to zlib or libpng required. It's made for C (ISO C90), and has a C++
@@ -86,6 +90,7 @@ Architecture: any
 Pre-Depends: ${misc:Pre-Depends}
 Depends: ${misc:Depends},
          libdart6-external-lodepng-nightly (= ${binary:Version})
+Conflicts: libdart6-external-lodepng-dev
 Description: LodePNG - Development Files
  LodePNG is a PNG image decoder and encoder, all in one, no dependency or
  linkage to zlib or libpng required. It's made for C (ISO C90), and has a C++
@@ -96,6 +101,7 @@ Section: libs
 Architecture: any
 Pre-Depends: ${misc:Pre-Depends}
 Depends: ${shlibs:Depends}, ${misc:Depends}
+Conflicts: libdart6-external-odelcpsolver
 Description: Open Dynamics Engine - Shared Library
  ODE is a free, industrial quality library for simulating articulated rigid body
  dynamics - for example ground vehicles, legged creatures, and moving objects in
@@ -108,6 +114,7 @@ Architecture: any
 Pre-Depends: ${misc:Pre-Depends}
 Depends: ${misc:Depends},
          libdart6-external-odelcpsolver-nightly (= ${binary:Version})
+Conflicts: libdart6-external-odelcpsolver-dev
 Description: Open Dynamics Engine - Development Files
  ODE is a free, industrial quality library for simulating articulated rigid body
  dynamics - for example ground vehicles, legged creatures, and moving objects in
@@ -119,6 +126,7 @@ Section: libs
 Architecture: any
 Pre-Depends: ${misc:Pre-Depends}
 Depends: ${shlibs:Depends}, ${misc:Depends}
+Conflicts: libdart6
 Description: Dynamic Animation and Robotics Toolkit - Shared Library
  DART is a collaborative, cross-platform, open source library created by the
  Georgia Tech Graphics Lab and Humanoid Robotics Lab. The library provides data
@@ -187,6 +195,7 @@ Section: libs
 Architecture: any
 Pre-Depends: ${misc:Pre-Depends}
 Depends: ${shlibs:Depends}, ${misc:Depends}
+Conflicts: libdart6-optimizer-nlopt
 Description: Dynamic Animation and Robotics Toolkit - Optimizer-nlopt Component Shared Library
  DART is a collaborative, cross-platform, open source library created by the
  Georgia Tech Graphics Lab and Humanoid Robotics Lab. The library provides data
@@ -219,6 +228,7 @@ Depends: ${misc:Depends},
          libdart6-dev-nightly,
          libdart6-optimizer-nlopt-nightly (= ${binary:Version}),
          libnlopt-cxx-dev
+Conflicts: libdart6-optimizer-nlopt-dev
 Description: Dynamic Animation and Robotics Toolkit - Optimizer-nlopt Component Development Files
  DART is a collaborative, cross-platform, open source library created by the
  Georgia Tech Graphics Lab and Humanoid Robotics Lab. The library provides data
@@ -248,6 +258,7 @@ Section: libs
 Architecture: any
 Pre-Depends: ${misc:Pre-Depends}
 Depends: ${shlibs:Depends}, ${misc:Depends}
+Conflicts: libdart6-optimizer-ipopt
 Description: Dynamic Animation and Robotics Toolkit - Optimizer-ipopt Component Shared Library
  DART is a collaborative, cross-platform, open source library created by the
  Georgia Tech Graphics Lab and Humanoid Robotics Lab. The library provides data
@@ -280,6 +291,7 @@ Depends: ${misc:Depends},
          libdart6-dev-nightly,
          libdart6-optimizer-ipopt-nightly (= ${binary:Version}),
          coinor-libipopt-dev (>= 3.11.9)
+Conflicts: libdart6-optimizer-ipopt-dev
 Description: Dynamic Animation and Robotics Toolkit - Optimizer-ipopt Component Development Files
  DART is a collaborative, cross-platform, open source library created by the
  Georgia Tech Graphics Lab and Humanoid Robotics Lab. The library provides data
@@ -309,6 +321,7 @@ Section: libs
 Architecture: any
 Pre-Depends: ${misc:Pre-Depends}
 Depends: ${shlibs:Depends}, ${misc:Depends}
+Conflicts: libdart6-collision-bullet
 Description: Dynamic Animation and Robotics Toolkit - Utils Component Shared Library
  DART is a collaborative, cross-platform, open source library created by the
  Georgia Tech Graphics Lab and Humanoid Robotics Lab. The library provides data
@@ -341,6 +354,7 @@ Depends: ${misc:Depends},
          libdart6-dev-nightly,
          libdart6-collision-bullet-nightly (= ${binary:Version}),
          libbullet-dev
+Conflicts: libdart6-collision-bullet-dev
 Description: Dynamic Animation and Robotics Toolkit - Utils Component Development Files
  DART is a collaborative, cross-platform, open source library created by the
  Georgia Tech Graphics Lab and Humanoid Robotics Lab. The library provides data
@@ -370,6 +384,7 @@ Section: libs
 Architecture: any
 Pre-Depends: ${misc:Pre-Depends}
 Depends: ${shlibs:Depends}, ${misc:Depends}
+Conflicts: libdart6-collision-ode
 Description: Dynamic Animation and Robotics Toolkit - Utils Component Shared Library
  DART is a collaborative, cross-platform, open source library created by the
  Georgia Tech Graphics Lab and Humanoid Robotics Lab. The library provides data
@@ -402,6 +417,7 @@ Depends: ${misc:Depends},
          libdart6-dev-nightly,
          libdart6-collision-ode-nightly (= ${binary:Version}),
          libode-dev
+Conflicts: libdart6-collision-ode-dev
 Description: Dynamic Animation and Robotics Toolkit - Utils Component Development Files
  DART is a collaborative, cross-platform, open source library created by the
  Georgia Tech Graphics Lab and Humanoid Robotics Lab. The library provides data
@@ -431,6 +447,7 @@ Section: libs
 Architecture: any
 Pre-Depends: ${misc:Pre-Depends}
 Depends: ${shlibs:Depends}, ${misc:Depends}
+Conflicts: libdart6-planning
 Description: Dynamic Animation and Robotics Toolkit - Planning Component Shared Library
  DART is a collaborative, cross-platform, open source library created by the
  Georgia Tech Graphics Lab and Humanoid Robotics Lab. The library provides data
@@ -464,6 +481,7 @@ Depends: ${misc:Depends},
          libdart6-planning-nightly (= ${binary:Version}),
          libflann-dev,
          liblz4-dev
+Conflicts: libdart6-planning-dev
 Description: Dynamic Animation and Robotics Toolkit - Planning Component Development Files
  DART is a collaborative, cross-platform, open source library created by the
  Georgia Tech Graphics Lab and Humanoid Robotics Lab. The library provides data
@@ -493,6 +511,7 @@ Section: libs
 Architecture: any
 Pre-Depends: ${misc:Pre-Depends}
 Depends: ${shlibs:Depends}, ${misc:Depends}
+Conflicts: libdart6-utils
 Description: Dynamic Animation and Robotics Toolkit - Utils Component Shared Library
  DART is a collaborative, cross-platform, open source library created by the
  Georgia Tech Graphics Lab and Humanoid Robotics Lab. The library provides data
@@ -527,6 +546,7 @@ Depends: ${misc:Depends},
          libdart6-utils-nightly (= ${binary:Version}),
          libtinyxml-dev,
          libtinyxml2-dev
+Conflicts: libdart6-utils-dev
 Description: Dynamic Animation and Robotics Toolkit - Utils Component Development Files
  DART is a collaborative, cross-platform, open source library created by the
  Georgia Tech Graphics Lab and Humanoid Robotics Lab. The library provides data
@@ -556,6 +576,7 @@ Section: libs
 Architecture: any
 Pre-Depends: ${misc:Pre-Depends}
 Depends: ${shlibs:Depends}, ${misc:Depends}
+Conflicts: libdart6-utils-urdf
 Description: Dynamic Animation and Robotics Toolkit - Utils Component Shared Library
  DART is a collaborative, cross-platform, open source library created by the
  Georgia Tech Graphics Lab and Humanoid Robotics Lab. The library provides data
@@ -589,6 +610,7 @@ Depends: ${misc:Depends},
          libdart6-utils-dev-nightly,
          libdart6-utils-urdf-nightly (= ${binary:Version}),
          liburdfdom-dev
+Conflicts: libdart6-utils-urdf-dev
 Description: Dynamic Animation and Robotics Toolkit - Utils Component Development Files
  DART is a collaborative, cross-platform, open source library created by the
  Georgia Tech Graphics Lab and Humanoid Robotics Lab. The library provides data
@@ -618,6 +640,7 @@ Section: libs
 Architecture: any
 Pre-Depends: ${misc:Pre-Depends}
 Depends: ${shlibs:Depends}, ${misc:Depends}
+Conflicts: libdart6-gui
 Description: Dynamic Animation and Robotics Toolkit - GUI Component Shared Library
  DART is a collaborative, cross-platform, open source library created by the
  Georgia Tech Graphics Lab and Humanoid Robotics Lab. The library provides data
@@ -654,6 +677,7 @@ Depends: ${misc:Depends},
          freeglut3-dev,
          libxi-dev,
          libxmu-dev
+Conflicts: libdart6-gui-dev
 Description: Dynamic Animation and Robotics Toolkit - GUI Component Development Files
  DART is a collaborative, cross-platform, open source library created by the
  Georgia Tech Graphics Lab and Humanoid Robotics Lab. The library provides data
@@ -683,6 +707,7 @@ Section: libs
 Architecture: any
 Pre-Depends: ${misc:Pre-Depends}
 Depends: ${shlibs:Depends}, ${misc:Depends}
+Conflicts: libdart6-gui-osg
 Description: Dynamic Animation and Robotics Toolkit - GUI-osg Component Shared Library
  DART is a collaborative, cross-platform, open source library created by the
  Georgia Tech Graphics Lab and Humanoid Robotics Lab. The library provides data
@@ -716,6 +741,7 @@ Depends: ${misc:Depends},
          libdart6-gui-osg-nightly (= ${binary:Version}),
          libopenthreads-dev,
          libopenscenegraph-dev
+Conflicts: libdart6-gui-osg-dev
 Description: Dynamic Animation and Robotics Toolkit - GUI-osg Component Development Files
  DART is a collaborative, cross-platform, open source library created by the
  Georgia Tech Graphics Lab and Humanoid Robotics Lab. The library provides data
@@ -743,6 +769,7 @@ Description: Dynamic Animation and Robotics Toolkit - GUI-osg Component Developm
 Package: dart6-data-nightly
 Architecture: all
 Depends: ${misc:Depends}
+Conflicts: dart6-data
 Description: Dynamic Animation and Robotics Toolkit - GUI-osg Component Development Files
  DART is a collaborative, cross-platform, open source library created by the
  Georgia Tech Graphics Lab and Humanoid Robotics Lab. The library provides data
@@ -773,6 +800,7 @@ Package: dart6-examples-nightly
 Architecture: all
 Depends: ${misc:Depends},
          dart6-data-nightly
+Conflicts: dart6-examples
 Description: Dynamic Animation and Robotics Toolkit - GUI-osg Component Development Files
  DART is a collaborative, cross-platform, open source library created by the
  Georgia Tech Graphics Lab and Humanoid Robotics Lab. The library provides data
@@ -803,6 +831,7 @@ Package: dart6-tutorials-nightly
 Architecture: all
 Depends: ${misc:Depends},
          dart6-data-nightly
+Conflicts: dart6-tutorials
 Description: Dynamic Animation and Robotics Toolkit - GUI-osg Component Development Files
  DART is a collaborative, cross-platform, open source library created by the
  Georgia Tech Graphics Lab and Humanoid Robotics Lab. The library provides data
@@ -838,6 +867,7 @@ Depends: ${misc:Depends},
          dart6-data-nightly,
          python3-numpy,
          python3
+Conflicts: python3-dartpy
 Description: Python bindings for the Dynamic Animation and Robotics Toolkit - Shared Library
  Python bindings for the Dynamic Animation and Robotics Toolkit.
 
@@ -860,6 +890,7 @@ Depends: ${misc:Depends},
          dart6-examples-nightly,
          dart6-tutorials-nightly,
          python3-dartpy-nightly
+Conflicts: libdart6-all-dev
 Description: Dynamic Animation and Robotics Toolkit - All Development Files
  DART is a collaborative, cross-platform, open source library created by the
  Georgia Tech Graphics Lab and Humanoid Robotics Lab. The library provides data
