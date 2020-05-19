@@ -25,9 +25,7 @@ Build-Depends: debhelper (>= 9),
                liboctomap-dev,
                libopenthreads-dev,
                libopenscenegraph-dev,
-               liblz4-dev,
-               python-setuptools,
-               python3-setuptools
+               liblz4-dev
 Standards-Version: 3.9.8
 Section: libs
 Homepage: http://dartsim.github.io/
