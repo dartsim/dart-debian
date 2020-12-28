@@ -1,53 +1,11 @@
+dart6 (6.9.5-0~bionic) bionic; urgency=medium
+
+  * dart6 6.9.5-0 release
+
+ -- Jeongseok Lee <jslee02@gmail.com>  Mon, 28 Dec 2020 15:41:21 -0800
+
 dart6 (6.9.4-1~bionic) bionic; urgency=medium
 
   * dart6 6.9.4-1 release
 
  -- Jeongseok Lee <jslee02@gmail.com>  Mon, 28 Dec 2020 14:23:53 -0800
-
-dart6 (6.9.4-0~bionic) bionic; urgency=medium
-
-  * dart6 6.9.4-0 release
-
- -- Jeongseok Lee <jslee02@gmail.com>  Sun, 30 Aug 2020 15:05:18 -0700
-
-dart6 (6.9.3-0~bionic) bionic; urgency=medium
-
-  * dart6 6.9.3-0 release
-
- -- Jeongseok Lee <jslee02@gmail.com>  Thu, 27 Aug 2020 09:07:26 -0700
-
-dart6 (6.9.2-6~bionic) bionic; urgency=medium
-
-  * dart6 6.9.2-6 release
-
- -- Jeongseok Lee <jslee02@gmail.com>  Mon, 18 May 2020 22:34:00 -0700
-
-dart6 (6.9.2-5~bionic) bionic; urgency=medium
-
-  * dart6 6.9.2-5 release
-
- -- Jeongseok Lee <jslee02@gmail.com>  Mon, 23 Mar 2020 23:09:50 -0700
-
-dart6 (6.9.2-4~bionic) bionic; urgency=medium
-
-  * dart6 6.9.2-4 release
-
- -- Jeongseok Lee <jslee02@gmail.com>  Mon, 23 Mar 2020 23:06:44 -0700
-
-dart6 (6.9.2-3~bionic) bionic; urgency=medium
-
-  * dart6 6.9.2-3 release
-
- -- Jeongseok Lee <jslee02@gmail.com>  Mon, 23 Mar 2020 23:02:42 -0700
-
-dart6 (6.9.2-2~bionic) bionic; urgency=medium
-
-  * dart6 6.9.2-2 release
-
- -- Jeongseok Lee <jslee02@gmail.com>  Mon, 23 Mar 2020 22:51:03 -0700
-
-dart6 (6.9.1-0~bionic) bionic; urgency=medium
-
-  * dart6 6.9.1-0 release
-
- -- Jeongseok Lee <jslee02@gmail.com>  Thu, 06 Jun 2019 03:51:26 -0700
