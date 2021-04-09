@@ -1,4 +1,4 @@
-Source: dart6-nightly
+Source: dart6
 Priority: extra
 Maintainer: Jeongseok Lee <jslee02@gmail.com>
 Build-Depends: debhelper (>= 9),
@@ -32,7 +32,7 @@ Homepage: http://dartsim.github.io/
 Vcs-Git: git://github.com/dartsim/dart.git
 Vcs-Browser: https://github.com/dartsim/dart
 
-Package: libdart6-external-ikfast-dev-nightly
+Package: libdart6-external-ikfast-dev
 Section: libdevel
 Architecture: any
 Pre-Depends: ${misc:Pre-Depends}
@@ -42,7 +42,7 @@ Description: IKFast - Development
  Header file for all ikfast c++ files/shared objects. The ikfast inverse
  kinematics compiler is part of OpenRAVE.
 
-Package: libdart6-external-imgui-nightly
+Package: libdart6-external-imgui
 Section: libs
 Architecture: any
 Pre-Depends: ${misc:Pre-Depends}
@@ -54,12 +54,12 @@ Description: dear imgui (AKA ImGui) - Shared Files
  3D-pipeline enabled application. It is fast, portable, renderer agnostic and
  self-contained (no external dependencies).
 
-Package: libdart6-external-imgui-dev-nightly
+Package: libdart6-external-imgui-dev
 Section: libdevel
 Architecture: any
 Pre-Depends: ${misc:Pre-Depends}
 Depends: ${misc:Depends},
-         libdart6-external-imgui-nightly (= ${binary:Version})
+         libdart6-external-imgui (= ${binary:Version})
 Conflicts: libdart6-external-imgui-dev
 Description: dear imgui (AKA ImGui) - Development
  dear imgui (AKA ImGui), is a bloat-free graphical user interface library for
@@ -67,7 +67,7 @@ Description: dear imgui (AKA ImGui) - Development
  3D-pipeline enabled application. It is fast, portable, renderer agnostic and
  self-contained (no external dependencies).
 
-Package: libdart6-external-lodepng-nightly
+Package: libdart6-external-lodepng
 Section: libs
 Architecture: any
 Pre-Depends: ${misc:Pre-Depends}
@@ -78,19 +78,19 @@ Description: LodePNG - Shared Files
  linkage to zlib or libpng required. It's made for C (ISO C90), and has a C++
  wrapper with a more convenient interface on top.
 
-Package: libdart6-external-lodepng-dev-nightly
+Package: libdart6-external-lodepng-dev
 Section: libdevel
 Architecture: any
 Pre-Depends: ${misc:Pre-Depends}
 Depends: ${misc:Depends},
-         libdart6-external-lodepng-nightly (= ${binary:Version})
+         libdart6-external-lodepng (= ${binary:Version})
 Conflicts: libdart6-external-lodepng-dev
 Description: LodePNG - Development Files
  LodePNG is a PNG image decoder and encoder, all in one, no dependency or
  linkage to zlib or libpng required. It's made for C (ISO C90), and has a C++
  wrapper with a more convenient interface on top.
 
-Package: libdart6-external-odelcpsolver-nightly
+Package: libdart6-external-odelcpsolver
 Section: libs
 Architecture: any
 Pre-Depends: ${misc:Pre-Depends}
@@ -102,12 +102,12 @@ Description: Open Dynamics Engine - Shared Library
  VR environments. It is fast, flexible, robust and platform independent, with
  advanced joints, contact with friction, and built-in collision detection.
 
-Package: libdart6-external-odelcpsolver-dev-nightly
+Package: libdart6-external-odelcpsolver-dev
 Section: libdevel
 Architecture: any
 Pre-Depends: ${misc:Pre-Depends}
 Depends: ${misc:Depends},
-         libdart6-external-odelcpsolver-nightly (= ${binary:Version})
+         libdart6-external-odelcpsolver (= ${binary:Version})
 Conflicts: libdart6-external-odelcpsolver-dev
 Description: Open Dynamics Engine - Development Files
  ODE is a free, industrial quality library for simulating articulated rigid body
@@ -115,7 +115,7 @@ Description: Open Dynamics Engine - Development Files
  VR environments. It is fast, flexible, robust and platform independent, with
  advanced joints, contact with friction, and built-in collision detection.
 
-Package: libdart6-nightly
+Package: libdart6
 Section: libs
 Architecture: any
 Pre-Depends: ${misc:Pre-Depends}
@@ -145,15 +145,15 @@ Description: Dynamic Animation and Robotics Toolkit - Shared Library
  Multibody dynamic simulation in DART is an extension of RTQL8, an open source
  software created by the Georgia Tech Graphics Lab.
 
-Package: libdart6-dev-nightly
+Package: libdart6-dev
 Section: libdevel
 Architecture: any
 Pre-Depends: ${misc:Pre-Depends}
 Conflicts: libdart-core3-dev, libdart-core4-dev, libdart-core5-dev, libdart6-dev
 Depends: ${misc:Depends},
-         libdart6-nightly (= ${binary:Version}),
-         libdart6-external-ikfast-dev-nightly,
-         libdart6-external-odelcpsolver-dev-nightly,
+         libdart6 (= ${binary:Version}),
+         libdart6-external-ikfast-dev,
+         libdart6-external-odelcpsolver-dev,
          libeigen3-dev,
          libassimp-dev (>= 3),
          libccd-dev,
@@ -184,7 +184,7 @@ Description: Dynamic Animation and Robotics Toolkit - Development Files
  Multibody dynamic simulation in DART is an extension of RTQL8, an open source
  software created by the Georgia Tech Graphics Lab.
 
-Package: libdart6-optimizer-nlopt-nightly
+Package: libdart6-optimizer-nlopt
 Section: libs
 Architecture: any
 Pre-Depends: ${misc:Pre-Depends}
@@ -214,13 +214,13 @@ Description: Dynamic Animation and Robotics Toolkit - Optimizer-nlopt Component 
  Multibody dynamic simulation in DART is an extension of RTQL8, an open source
  software created by the Georgia Tech Graphics Lab.
 
-Package: libdart6-optimizer-nlopt-dev-nightly
+Package: libdart6-optimizer-nlopt-dev
 Section: libdevel
 Architecture: any
 Pre-Depends: ${misc:Pre-Depends}
 Depends: ${misc:Depends},
-         libdart6-dev-nightly,
-         libdart6-optimizer-nlopt-nightly (= ${binary:Version}),
+         libdart6-dev,
+         libdart6-optimizer-nlopt (= ${binary:Version}),
          libnlopt-dev
 Conflicts: libdart6-optimizer-nlopt-dev
 Description: Dynamic Animation and Robotics Toolkit - Optimizer-nlopt Component Development Files
@@ -247,7 +247,7 @@ Description: Dynamic Animation and Robotics Toolkit - Optimizer-nlopt Component 
  Multibody dynamic simulation in DART is an extension of RTQL8, an open source
  software created by the Georgia Tech Graphics Lab.
 
-Package: libdart6-optimizer-ipopt-nightly
+Package: libdart6-optimizer-ipopt
 Section: libs
 Architecture: any
 Pre-Depends: ${misc:Pre-Depends}
@@ -277,13 +277,13 @@ Description: Dynamic Animation and Robotics Toolkit - Optimizer-ipopt Component 
  Multibody dynamic simulation in DART is an extension of RTQL8, an open source
  software created by the Georgia Tech Graphics Lab.
 
-Package: libdart6-optimizer-ipopt-dev-nightly
+Package: libdart6-optimizer-ipopt-dev
 Section: libdevel
 Architecture: any
 Pre-Depends: ${misc:Pre-Depends}
 Depends: ${misc:Depends},
-         libdart6-dev-nightly,
-         libdart6-optimizer-ipopt-nightly (= ${binary:Version}),
+         libdart6-dev,
+         libdart6-optimizer-ipopt (= ${binary:Version}),
          coinor-libipopt-dev (>= 3.11.9)
 Conflicts: libdart6-optimizer-ipopt-dev
 Description: Dynamic Animation and Robotics Toolkit - Optimizer-ipopt Component Development Files
@@ -310,7 +310,7 @@ Description: Dynamic Animation and Robotics Toolkit - Optimizer-ipopt Component 
  Multibody dynamic simulation in DART is an extension of RTQL8, an open source
  software created by the Georgia Tech Graphics Lab.
 
-Package: libdart6-collision-bullet-nightly
+Package: libdart6-collision-bullet
 Section: libs
 Architecture: any
 Pre-Depends: ${misc:Pre-Depends}
@@ -340,13 +340,13 @@ Description: Dynamic Animation and Robotics Toolkit - Utils Component Shared Lib
  Multibody dynamic simulation in DART is an extension of RTQL8, an open source
  software created by the Georgia Tech Graphics Lab.
 
-Package: libdart6-collision-bullet-dev-nightly
+Package: libdart6-collision-bullet-dev
 Section: libdevel
 Architecture: any
 Pre-Depends: ${misc:Pre-Depends}
 Depends: ${misc:Depends},
-         libdart6-dev-nightly,
-         libdart6-collision-bullet-nightly (= ${binary:Version}),
+         libdart6-dev,
+         libdart6-collision-bullet (= ${binary:Version}),
          libbullet-dev
 Conflicts: libdart6-collision-bullet-dev
 Description: Dynamic Animation and Robotics Toolkit - Utils Component Development Files
@@ -373,7 +373,7 @@ Description: Dynamic Animation and Robotics Toolkit - Utils Component Developmen
  Multibody dynamic simulation in DART is an extension of RTQL8, an open source
  software created by the Georgia Tech Graphics Lab.
 
-Package: libdart6-collision-ode-nightly
+Package: libdart6-collision-ode
 Section: libs
 Architecture: any
 Pre-Depends: ${misc:Pre-Depends}
@@ -403,13 +403,13 @@ Description: Dynamic Animation and Robotics Toolkit - Utils Component Shared Lib
  Multibody dynamic simulation in DART is an extension of RTQL8, an open source
  software created by the Georgia Tech Graphics Lab.
 
-Package: libdart6-collision-ode-dev-nightly
+Package: libdart6-collision-ode-dev
 Section: libdevel
 Architecture: any
 Pre-Depends: ${misc:Pre-Depends}
 Depends: ${misc:Depends},
-         libdart6-dev-nightly,
-         libdart6-collision-ode-nightly (= ${binary:Version}),
+         libdart6-dev,
+         libdart6-collision-ode (= ${binary:Version}),
          libode-dev
 Conflicts: libdart6-collision-ode-dev
 Description: Dynamic Animation and Robotics Toolkit - Utils Component Development Files
@@ -436,7 +436,7 @@ Description: Dynamic Animation and Robotics Toolkit - Utils Component Developmen
  Multibody dynamic simulation in DART is an extension of RTQL8, an open source
  software created by the Georgia Tech Graphics Lab.
 
-Package: libdart6-planning-nightly
+Package: libdart6-planning
 Section: libs
 Architecture: any
 Pre-Depends: ${misc:Pre-Depends}
@@ -466,13 +466,13 @@ Description: Dynamic Animation and Robotics Toolkit - Planning Component Shared 
  Multibody dynamic simulation in DART is an extension of RTQL8, an open source
  software created by the Georgia Tech Graphics Lab.
 
-Package: libdart6-planning-dev-nightly
+Package: libdart6-planning-dev
 Section: libdevel
 Architecture: any
 Pre-Depends: ${misc:Pre-Depends}
 Depends: ${misc:Depends},
-         libdart6-dev-nightly,
-         libdart6-planning-nightly (= ${binary:Version}),
+         libdart6-dev,
+         libdart6-planning (= ${binary:Version}),
          libflann-dev,
          liblz4-dev
 Conflicts: libdart6-planning-dev
@@ -500,7 +500,7 @@ Description: Dynamic Animation and Robotics Toolkit - Planning Component Develop
  Multibody dynamic simulation in DART is an extension of RTQL8, an open source
  software created by the Georgia Tech Graphics Lab.
 
-Package: libdart6-utils-nightly
+Package: libdart6-utils
 Section: libs
 Architecture: any
 Pre-Depends: ${misc:Pre-Depends}
@@ -530,14 +530,14 @@ Description: Dynamic Animation and Robotics Toolkit - Utils Component Shared Lib
  Multibody dynamic simulation in DART is an extension of RTQL8, an open source
  software created by the Georgia Tech Graphics Lab.
 
-Package: libdart6-utils-dev-nightly
+Package: libdart6-utils-dev
 Section: libdevel
 Architecture: any
 Pre-Depends: ${misc:Pre-Depends}
 Depends: ${misc:Depends},
-         libdart6-dev-nightly,
-         libdart6-collision-bullet-dev-nightly,
-         libdart6-utils-nightly (= ${binary:Version}),
+         libdart6-dev,
+         libdart6-collision-bullet-dev,
+         libdart6-utils (= ${binary:Version}),
          libtinyxml-dev,
          libtinyxml2-dev
 Conflicts: libdart6-utils-dev
@@ -565,7 +565,7 @@ Description: Dynamic Animation and Robotics Toolkit - Utils Component Developmen
  Multibody dynamic simulation in DART is an extension of RTQL8, an open source
  software created by the Georgia Tech Graphics Lab.
 
-Package: libdart6-utils-urdf-nightly
+Package: libdart6-utils-urdf
 Section: libs
 Architecture: any
 Pre-Depends: ${misc:Pre-Depends}
@@ -595,14 +595,14 @@ Description: Dynamic Animation and Robotics Toolkit - Utils Component Shared Lib
  Multibody dynamic simulation in DART is an extension of RTQL8, an open source
  software created by the Georgia Tech Graphics Lab.
 
-Package: libdart6-utils-urdf-dev-nightly
+Package: libdart6-utils-urdf-dev
 Section: libdevel
 Architecture: any
 Pre-Depends: ${misc:Pre-Depends}
 Depends: ${misc:Depends},
-         libdart6-dev-nightly,
-         libdart6-utils-dev-nightly,
-         libdart6-utils-urdf-nightly (= ${binary:Version}),
+         libdart6-dev,
+         libdart6-utils-dev,
+         libdart6-utils-urdf (= ${binary:Version}),
          liburdfdom-dev
 Conflicts: libdart6-utils-urdf-dev
 Description: Dynamic Animation and Robotics Toolkit - Utils Component Development Files
@@ -629,7 +629,7 @@ Description: Dynamic Animation and Robotics Toolkit - Utils Component Developmen
  Multibody dynamic simulation in DART is an extension of RTQL8, an open source
  software created by the Georgia Tech Graphics Lab.
 
-Package: libdart6-gui-nightly
+Package: libdart6-gui
 Section: libs
 Architecture: any
 Pre-Depends: ${misc:Pre-Depends}
@@ -659,15 +659,15 @@ Description: Dynamic Animation and Robotics Toolkit - GUI Component Shared Libra
  Multibody dynamic simulation in DART is an extension of RTQL8, an open source
  software created by the Georgia Tech Graphics Lab.
 
-Package: libdart6-gui-dev-nightly
+Package: libdart6-gui-dev
 Section: libdevel
 Architecture: any
 Pre-Depends: ${misc:Pre-Depends}
 Depends: ${misc:Depends},
-         libdart6-utils-dev-nightly,
-         libdart6-gui-nightly (= ${binary:Version}),
-         libdart6-external-imgui-dev-nightly,
-         libdart6-external-lodepng-dev-nightly,
+         libdart6-utils-dev,
+         libdart6-gui (= ${binary:Version}),
+         libdart6-external-imgui-dev,
+         libdart6-external-lodepng-dev,
          freeglut3-dev,
          libxi-dev,
          libxmu-dev
@@ -696,7 +696,7 @@ Description: Dynamic Animation and Robotics Toolkit - GUI Component Development 
  Multibody dynamic simulation in DART is an extension of RTQL8, an open source
  software created by the Georgia Tech Graphics Lab.
 
-Package: libdart6-gui-osg-nightly
+Package: libdart6-gui-osg
 Section: libs
 Architecture: any
 Pre-Depends: ${misc:Pre-Depends}
@@ -726,13 +726,13 @@ Description: Dynamic Animation and Robotics Toolkit - GUI-osg Component Shared L
  Multibody dynamic simulation in DART is an extension of RTQL8, an open source
  software created by the Georgia Tech Graphics Lab.
 
-Package: libdart6-gui-osg-dev-nightly
+Package: libdart6-gui-osg-dev
 Section: libdevel
 Architecture: any
 Pre-Depends: ${misc:Pre-Depends}
 Depends: ${misc:Depends},
-         libdart6-gui-dev-nightly,
-         libdart6-gui-osg-nightly (= ${binary:Version}),
+         libdart6-gui-dev,
+         libdart6-gui-osg (= ${binary:Version}),
          libopenthreads-dev,
          libopenscenegraph-dev
 Conflicts: libdart6-gui-osg-dev
@@ -760,7 +760,7 @@ Description: Dynamic Animation and Robotics Toolkit - GUI-osg Component Developm
  Multibody dynamic simulation in DART is an extension of RTQL8, an open source
  software created by the Georgia Tech Graphics Lab.
 
-Package: dart6-data-nightly
+Package: dart6-data
 Architecture: all
 Depends: ${misc:Depends}
 Conflicts: dart6-data
@@ -790,10 +790,10 @@ Description: Dynamic Animation and Robotics Toolkit - GUI-osg Component Developm
  .
  This package contains data for the DART applications.
 
-Package: dart6-examples-nightly
+Package: dart6-examples
 Architecture: all
 Depends: ${misc:Depends},
-         dart6-data-nightly
+         dart6-data
 Conflicts: dart6-examples
 Description: Dynamic Animation and Robotics Toolkit - GUI-osg Component Development Files
  DART is a collaborative, cross-platform, open source library created by the
@@ -821,10 +821,10 @@ Description: Dynamic Animation and Robotics Toolkit - GUI-osg Component Developm
  .
  This package contains examples from the DART source.
 
-Package: dart6-tutorials-nightly
+Package: dart6-tutorials
 Architecture: all
 Depends: ${misc:Depends},
-         dart6-data-nightly
+         dart6-data
 Conflicts: dart6-tutorials
 Description: Dynamic Animation and Robotics Toolkit - GUI-osg Component Development Files
  DART is a collaborative, cross-platform, open source library created by the
@@ -852,24 +852,24 @@ Description: Dynamic Animation and Robotics Toolkit - GUI-osg Component Developm
  .
  This package contains tutorials from the DART source.
 
-Package: libdart6-all-dev-nightly
+Package: libdart6-all-dev
 Section: libdevel
 Architecture: any
 Pre-Depends: ${misc:Pre-Depends}
 Depends: ${misc:Depends},
-         libdart6-dev-nightly,
-         libdart6-planning-dev-nightly,
-         libdart6-utils-dev-nightly,
-         libdart6-utils-urdf-dev-nightly,
-         libdart6-gui-dev-nightly,
-         libdart6-gui-osg-dev-nightly,
-         libdart6-optimizer-nlopt-dev-nightly,
-         libdart6-optimizer-ipopt-dev-nightly,
-         libdart6-collision-bullet-dev-nightly,
-         libdart6-collision-ode-dev-nightly,
-         dart6-data-nightly,
-         dart6-examples-nightly,
-         dart6-tutorials-nightly
+         libdart6-dev,
+         libdart6-planning-dev,
+         libdart6-utils-dev,
+         libdart6-utils-urdf-dev,
+         libdart6-gui-dev,
+         libdart6-gui-osg-dev,
+         libdart6-optimizer-nlopt-dev,
+         libdart6-optimizer-ipopt-dev,
+         libdart6-collision-bullet-dev,
+         libdart6-collision-ode-dev,
+         dart6-data,
+         dart6-examples,
+         dart6-tutorials
 Conflicts: libdart6-all-dev
 Description: Dynamic Animation and Robotics Toolkit - All Development Files
  DART is a collaborative, cross-platform, open source library created by the
