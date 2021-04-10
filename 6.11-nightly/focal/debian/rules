@@ -29,15 +29,19 @@ override_dh_auto_install:
 	# DART
 	dh_auto_configure -- \
 		-DCMAKE_BUILD_TYPE:STRING=RelWithDebInfo \
-		-DDART_BUILD_DARTPY=OFF -DDART_VERBOSE=ON
+		-DDART_BUILD_DARTPY=OFF \
+		-DDART_VERBOSE=ON
 	dh_auto_build -- tests
 	dh_auto_test
 	dh_auto_install
 	# dartpy (Python 3)
 	rm -rf obj-*-linux-gnu
 	dh_auto_configure -- \
-		-DCMAKE_BUILD_TYPE:STRING=RelWithDebInfo -DDARTPY_PYTHON_VERSION=3 \
-		-DDART_BUILD_DARTPY=ON -DDART_VERBOSE=ON
+		-DCMAKE_BUILD_TYPE:STRING=RelWithDebInfo \
+		-DDARTPY_PYTHON_VERSION=3 \
+		-DDART_BUILD_DARTPY=ON \
+		-DBUILD_SHARED_LIBS=OFF \
+		-DDART_VERBOSE=ON
 	dh_auto_build -- dartpy
 	# dh_auto_build -- pytest
 	dh_auto_build -- install-dartpy
