@@ -1,0 +1,902 @@
+Source: dart6-nightly
+Priority: extra
+Maintainer: Jeongseok Lee <jslee02@gmail.com>
+Build-Depends: debhelper (>= 9),
+               cmake,
+               git,
+               libeigen3-dev,
+               libccd-dev,
+               libfcl-dev (>= 0.2.7),
+               libbullet-dev,
+               libode-dev,
+               libassimp-dev (>= 3),
+               libnlopt-cxx-dev,
+               coinor-libipopt-dev,
+               freeglut3-dev,
+               libxi-dev,
+               libxmu-dev,
+               libflann-dev (>= 1.8),
+               libtinyxml-dev,
+               libtinyxml2-dev,
+               liburdfdom-dev,
+               libboost-dev (>= 1.54.0.1ubuntu1),
+               libboost-filesystem-dev (>= 1.54.0-4ubuntu3),
+               libboost-system-dev (>= 1.54.0-4ubuntu3),
+               liboctomap-dev,
+               libopenthreads-dev,
+               libopenscenegraph-dev,
+               liblz4-dev,
+               python3-dev,
+               python3-numpy,
+               pybind11-dev,
+               python3-pytest,
+               python3,
+               libpython3-dev
+Standards-Version: 3.9.8
+Section: libs
+Homepage: http://dartsim.github.io/
+Vcs-Git: git://github.com/dartsim/dart.git
+Vcs-Browser: https://github.com/dartsim/dart
+
+Package: libdart6-external-ikfast-dev-nightly
+Section: libdevel
+Architecture: any
+Pre-Depends: ${misc:Pre-Depends}
+Depends: ${misc:Depends}
+Conflicts: libdart6-external-ikfast-dev
+Description: IKFast - Development
+ Header file for all ikfast c++ files/shared objects. The ikfast inverse
+ kinematics compiler is part of OpenRAVE.
+
+Package: libdart6-external-imgui-nightly
+Section: libs
+Architecture: any
+Pre-Depends: ${misc:Pre-Depends}
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Conflicts: libdart6-external-imgui
+Description: dear imgui (AKA ImGui) - Shared Files
+ dear imgui (AKA ImGui), is a bloat-free graphical user interface library for
+ C++. It outputs optimized vertex buffers that you can render anytime in your
+ 3D-pipeline enabled application. It is fast, portable, renderer agnostic and
+ self-contained (no external dependencies).
+
+Package: libdart6-external-imgui-dev-nightly
+Section: libdevel
+Architecture: any
+Pre-Depends: ${misc:Pre-Depends}
+Depends: ${misc:Depends},
+         libdart6-external-imgui-nightly (= ${binary:Version})
+Conflicts: libdart6-external-imgui-dev
+Description: dear imgui (AKA ImGui) - Development
+ dear imgui (AKA ImGui), is a bloat-free graphical user interface library for
+ C++. It outputs optimized vertex buffers that you can render anytime in your
+ 3D-pipeline enabled application. It is fast, portable, renderer agnostic and
+ self-contained (no external dependencies).
+
+Package: libdart6-external-lodepng-nightly
+Section: libs
+Architecture: any
+Pre-Depends: ${misc:Pre-Depends}
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Conflicts: libdart6-external-lodepng
+Description: LodePNG - Shared Files
+ LodePNG is a PNG image decoder and encoder, all in one, no dependency or
+ linkage to zlib or libpng required. It's made for C (ISO C90), and has a C++
+ wrapper with a more convenient interface on top.
+
+Package: libdart6-external-lodepng-dev-nightly
+Section: libdevel
+Architecture: any
+Pre-Depends: ${misc:Pre-Depends}
+Depends: ${misc:Depends},
+         libdart6-external-lodepng-nightly (= ${binary:Version})
+Conflicts: libdart6-external-lodepng-dev
+Description: LodePNG - Development Files
+ LodePNG is a PNG image decoder and encoder, all in one, no dependency or
+ linkage to zlib or libpng required. It's made for C (ISO C90), and has a C++
+ wrapper with a more convenient interface on top.
+
+Package: libdart6-external-odelcpsolver-nightly
+Section: libs
+Architecture: any
+Pre-Depends: ${misc:Pre-Depends}
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Conflicts: libdart6-external-odelcpsolver
+Description: Open Dynamics Engine - Shared Library
+ ODE is a free, industrial quality library for simulating articulated rigid body
+ dynamics - for example ground vehicles, legged creatures, and moving objects in
+ VR environments. It is fast, flexible, robust and platform independent, with
+ advanced joints, contact with friction, and built-in collision detection.
+
+Package: libdart6-external-odelcpsolver-dev-nightly
+Section: libdevel
+Architecture: any
+Pre-Depends: ${misc:Pre-Depends}
+Depends: ${misc:Depends},
+         libdart6-external-odelcpsolver-nightly (= ${binary:Version})
+Conflicts: libdart6-external-odelcpsolver-dev
+Description: Open Dynamics Engine - Development Files
+ ODE is a free, industrial quality library for simulating articulated rigid body
+ dynamics - for example ground vehicles, legged creatures, and moving objects in
+ VR environments. It is fast, flexible, robust and platform independent, with
+ advanced joints, contact with friction, and built-in collision detection.
+
+Package: libdart6-nightly
+Section: libs
+Architecture: any
+Pre-Depends: ${misc:Pre-Depends}
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Conflicts: libdart6
+Description: Dynamic Animation and Robotics Toolkit - Shared Library
+ DART is a collaborative, cross-platform, open source library created by the
+ Georgia Tech Graphics Lab and Humanoid Robotics Lab. The library provides data
+ structures and algorithms for kinematic and dynamic applications in robotics
+ and computer animation.
+ DART is distinguished by it's accuracy and stability due to its use of
+ generalized coordinates to represent articulated rigid body systems and
+ computation of Lagrange's equations derived from D.Alembert's principle to
+ describe the dynamics of motion.
+ For developers, in contrast to many popular physics engines which view the
+ simulator as a black box, DART gives full access to internal kinematic and
+ dynamic quantities, such as the mass matrix, Coriolis and centrifugal forces,
+ transformation matrices and their derivatives. DART also provides efficient
+ computation of Jacobian matrices for arbitrary body points and coordinate
+ frames. Contact and collision are handled using an implicit time-stepping,
+ velocity-based LCP (linear-complementarity problem) to guarantee
+ non-penetration, directional friction, and approximated Coulomb friction cone
+ conditions. For collision detection, DART uses FCL developed by Willow Garage
+ and the UNC Gamma Lab.
+ DART has applications in robotics and computer animation because it features a
+ multibody dynamic simulator and tools for control and motion planning.
+ Multibody dynamic simulation in DART is an extension of RTQL8, an open source
+ software created by the Georgia Tech Graphics Lab.
+
+Package: libdart6-dev-nightly
+Section: libdevel
+Architecture: any
+Pre-Depends: ${misc:Pre-Depends}
+Conflicts: libdart-core3-dev, libdart-core4-dev, libdart-core5-dev, libdart6-dev
+Depends: ${misc:Depends},
+         libdart6-nightly (= ${binary:Version}),
+         libdart6-external-ikfast-dev-nightly,
+         libdart6-external-odelcpsolver-dev-nightly,
+         libeigen3-dev,
+         libassimp-dev (>= 3),
+         libccd-dev,
+         libfcl-dev,
+         libboost-all-dev (>= 1.54.0.1ubuntu1),
+         liboctomap-dev
+Description: Dynamic Animation and Robotics Toolkit - Development Files
+ DART is a collaborative, cross-platform, open source library created by the
+ Georgia Tech Graphics Lab and Humanoid Robotics Lab. The library provides data
+ structures and algorithms for kinematic and dynamic applications in robotics
+ and computer animation.
+ DART is distinguished by it's accuracy and stability due to its use of
+ generalized coordinates to represent articulated rigid body systems and
+ computation of Lagrange's equations derived from D.Alembert's principle to
+ describe the dynamics of motion.
+ For developers, in contrast to many popular physics engines which view the
+ simulator as a black box, DART gives full access to internal kinematic and
+ dynamic quantities, such as the mass matrix, Coriolis and centrifugal forces,
+ transformation matrices and their derivatives. DART also provides efficient
+ computation of Jacobian matrices for arbitrary body points and coordinate
+ frames. Contact and collision are handled using an implicit time-stepping,
+ velocity-based LCP (linear-complementarity problem) to guarantee
+ non-penetration, directional friction, and approximated Coulomb friction cone
+ conditions. For collision detection, DART uses FCL developed by Willow Garage
+ and the UNC Gamma Lab.
+ DART has applications in robotics and computer animation because it features a
+ multibody dynamic simulator and tools for control and motion planning.
+ Multibody dynamic simulation in DART is an extension of RTQL8, an open source
+ software created by the Georgia Tech Graphics Lab.
+
+Package: libdart6-optimizer-nlopt-nightly
+Section: libs
+Architecture: any
+Pre-Depends: ${misc:Pre-Depends}
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Conflicts: libdart6-optimizer-nlopt
+Description: Dynamic Animation and Robotics Toolkit - Optimizer-nlopt Component Shared Library
+ DART is a collaborative, cross-platform, open source library created by the
+ Georgia Tech Graphics Lab and Humanoid Robotics Lab. The library provides data
+ structures and algorithms for kinematic and dynamic applications in robotics
+ and computer animation.
+ DART is distinguished by it's accuracy and stability due to its use of
+ generalized coordinates to represent articulated rigid body systems and
+ computation of Lagrange's equations derived from D.Alembert's principle to
+ describe the dynamics of motion.
+ For developers, in contrast to many popular physics engines which view the
+ simulator as a black box, DART gives full access to internal kinematic and
+ dynamic quantities, such as the mass matrix, Coriolis and centrifugal forces,
+ transformation matrices and their derivatives. DART also provides efficient
+ computation of Jacobian matrices for arbitrary body points and coordinate
+ frames. Contact and collision are handled using an implicit time-stepping,
+ velocity-based LCP (linear-complementarity problem) to guarantee
+ non-penetration, directional friction, and approximated Coulomb friction cone
+ conditions. For collision detection, DART uses FCL developed by Willow Garage
+ and the UNC Gamma Lab.
+ DART has applications in robotics and computer animation because it features a
+ multibody dynamic simulator and tools for control and motion planning.
+ Multibody dynamic simulation in DART is an extension of RTQL8, an open source
+ software created by the Georgia Tech Graphics Lab.
+
+Package: libdart6-optimizer-nlopt-dev-nightly
+Section: libdevel
+Architecture: any
+Pre-Depends: ${misc:Pre-Depends}
+Depends: ${misc:Depends},
+         libdart6-dev-nightly,
+         libdart6-optimizer-nlopt-nightly (= ${binary:Version}),
+         libnlopt-cxx-dev
+Conflicts: libdart6-optimizer-nlopt-dev
+Description: Dynamic Animation and Robotics Toolkit - Optimizer-nlopt Component Development Files
+ DART is a collaborative, cross-platform, open source library created by the
+ Georgia Tech Graphics Lab and Humanoid Robotics Lab. The library provides data
+ structures and algorithms for kinematic and dynamic applications in robotics
+ and computer animation.
+ DART is distinguished by it's accuracy and stability due to its use of
+ generalized coordinates to represent articulated rigid body systems and
+ computation of Lagrange's equations derived from D.Alembert's principle to
+ describe the dynamics of motion.
+ For developers, in contrast to many popular physics engines which view the
+ simulator as a black box, DART gives full access to internal kinematic and
+ dynamic quantities, such as the mass matrix, Coriolis and centrifugal forces,
+ transformation matrices and their derivatives. DART also provides efficient
+ computation of Jacobian matrices for arbitrary body points and coordinate
+ frames. Contact and collision are handled using an implicit time-stepping,
+ velocity-based LCP (linear-complementarity problem) to guarantee
+ non-penetration, directional friction, and approximated Coulomb friction cone
+ conditions. For collision detection, DART uses FCL developed by Willow Garage
+ and the UNC Gamma Lab.
+ DART has applications in robotics and computer animation because it features a
+ multibody dynamic simulator and tools for control and motion planning.
+ Multibody dynamic simulation in DART is an extension of RTQL8, an open source
+ software created by the Georgia Tech Graphics Lab.
+
+Package: libdart6-optimizer-ipopt-nightly
+Section: libs
+Architecture: any
+Pre-Depends: ${misc:Pre-Depends}
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Conflicts: libdart6-optimizer-ipopt
+Description: Dynamic Animation and Robotics Toolkit - Optimizer-ipopt Component Shared Library
+ DART is a collaborative, cross-platform, open source library created by the
+ Georgia Tech Graphics Lab and Humanoid Robotics Lab. The library provides data
+ structures and algorithms for kinematic and dynamic applications in robotics
+ and computer animation.
+ DART is distinguished by it's accuracy and stability due to its use of
+ generalized coordinates to represent articulated rigid body systems and
+ computation of Lagrange's equations derived from D.Alembert's principle to
+ describe the dynamics of motion.
+ For developers, in contrast to many popular physics engines which view the
+ simulator as a black box, DART gives full access to internal kinematic and
+ dynamic quantities, such as the mass matrix, Coriolis and centrifugal forces,
+ transformation matrices and their derivatives. DART also provides efficient
+ computation of Jacobian matrices for arbitrary body points and coordinate
+ frames. Contact and collision are handled using an implicit time-stepping,
+ velocity-based LCP (linear-complementarity problem) to guarantee
+ non-penetration, directional friction, and approximated Coulomb friction cone
+ conditions. For collision detection, DART uses FCL developed by Willow Garage
+ and the UNC Gamma Lab.
+ DART has applications in robotics and computer animation because it features a
+ multibody dynamic simulator and tools for control and motion planning.
+ Multibody dynamic simulation in DART is an extension of RTQL8, an open source
+ software created by the Georgia Tech Graphics Lab.
+
+Package: libdart6-optimizer-ipopt-dev-nightly
+Section: libdevel
+Architecture: any
+Pre-Depends: ${misc:Pre-Depends}
+Depends: ${misc:Depends},
+         libdart6-dev-nightly,
+         libdart6-optimizer-ipopt-nightly (= ${binary:Version}),
+         coinor-libipopt-dev (>= 3.11.9)
+Conflicts: libdart6-optimizer-ipopt-dev
+Description: Dynamic Animation and Robotics Toolkit - Optimizer-ipopt Component Development Files
+ DART is a collaborative, cross-platform, open source library created by the
+ Georgia Tech Graphics Lab and Humanoid Robotics Lab. The library provides data
+ structures and algorithms for kinematic and dynamic applications in robotics
+ and computer animation.
+ DART is distinguished by it's accuracy and stability due to its use of
+ generalized coordinates to represent articulated rigid body systems and
+ computation of Lagrange's equations derived from D.Alembert's principle to
+ describe the dynamics of motion.
+ For developers, in contrast to many popular physics engines which view the
+ simulator as a black box, DART gives full access to internal kinematic and
+ dynamic quantities, such as the mass matrix, Coriolis and centrifugal forces,
+ transformation matrices and their derivatives. DART also provides efficient
+ computation of Jacobian matrices for arbitrary body points and coordinate
+ frames. Contact and collision are handled using an implicit time-stepping,
+ velocity-based LCP (linear-complementarity problem) to guarantee
+ non-penetration, directional friction, and approximated Coulomb friction cone
+ conditions. For collision detection, DART uses FCL developed by Willow Garage
+ and the UNC Gamma Lab.
+ DART has applications in robotics and computer animation because it features a
+ multibody dynamic simulator and tools for control and motion planning.
+ Multibody dynamic simulation in DART is an extension of RTQL8, an open source
+ software created by the Georgia Tech Graphics Lab.
+
+Package: libdart6-collision-bullet-nightly
+Section: libs
+Architecture: any
+Pre-Depends: ${misc:Pre-Depends}
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Conflicts: libdart6-collision-bullet
+Description: Dynamic Animation and Robotics Toolkit - Utils Component Shared Library
+ DART is a collaborative, cross-platform, open source library created by the
+ Georgia Tech Graphics Lab and Humanoid Robotics Lab. The library provides data
+ structures and algorithms for kinematic and dynamic applications in robotics
+ and computer animation.
+ DART is distinguished by it's accuracy and stability due to its use of
+ generalized coordinates to represent articulated rigid body systems and
+ computation of Lagrange's equations derived from D.Alembert's principle to
+ describe the dynamics of motion.
+ For developers, in contrast to many popular physics engines which view the
+ simulator as a black box, DART gives full access to internal kinematic and
+ dynamic quantities, such as the mass matrix, Coriolis and centrifugal forces,
+ transformation matrices and their derivatives. DART also provides efficient
+ computation of Jacobian matrices for arbitrary body points and coordinate
+ frames. Contact and collision are handled using an implicit time-stepping,
+ velocity-based LCP (linear-complementarity problem) to guarantee
+ non-penetration, directional friction, and approximated Coulomb friction cone
+ conditions. For collision detection, DART uses FCL developed by Willow Garage
+ and the UNC Gamma Lab.
+ DART has applications in robotics and computer animation because it features a
+ multibody dynamic simulator and tools for control and motion planning.
+ Multibody dynamic simulation in DART is an extension of RTQL8, an open source
+ software created by the Georgia Tech Graphics Lab.
+
+Package: libdart6-collision-bullet-dev-nightly
+Section: libdevel
+Architecture: any
+Pre-Depends: ${misc:Pre-Depends}
+Depends: ${misc:Depends},
+         libdart6-dev-nightly,
+         libdart6-collision-bullet-nightly (= ${binary:Version}),
+         libbullet-dev
+Conflicts: libdart6-collision-bullet-dev
+Description: Dynamic Animation and Robotics Toolkit - Utils Component Development Files
+ DART is a collaborative, cross-platform, open source library created by the
+ Georgia Tech Graphics Lab and Humanoid Robotics Lab. The library provides data
+ structures and algorithms for kinematic and dynamic applications in robotics
+ and computer animation.
+ DART is distinguished by it's accuracy and stability due to its use of
+ generalized coordinates to represent articulated rigid body systems and
+ computation of Lagrange's equations derived from D.Alembert's principle to
+ describe the dynamics of motion.
+ For developers, in contrast to many popular physics engines which view the
+ simulator as a black box, DART gives full access to internal kinematic and
+ dynamic quantities, such as the mass matrix, Coriolis and centrifugal forces,
+ transformation matrices and their derivatives. DART also provides efficient
+ computation of Jacobian matrices for arbitrary body points and coordinate
+ frames. Contact and collision are handled using an implicit time-stepping,
+ velocity-based LCP (linear-complementarity problem) to guarantee
+ non-penetration, directional friction, and approximated Coulomb friction cone
+ conditions. For collision detection, DART uses FCL developed by Willow Garage
+ and the UNC Gamma Lab.
+ DART has applications in robotics and computer animation because it features a
+ multibody dynamic simulator and tools for control and motion planning.
+ Multibody dynamic simulation in DART is an extension of RTQL8, an open source
+ software created by the Georgia Tech Graphics Lab.
+
+Package: libdart6-collision-ode-nightly
+Section: libs
+Architecture: any
+Pre-Depends: ${misc:Pre-Depends}
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Conflicts: libdart6-collision-ode
+Description: Dynamic Animation and Robotics Toolkit - Utils Component Shared Library
+ DART is a collaborative, cross-platform, open source library created by the
+ Georgia Tech Graphics Lab and Humanoid Robotics Lab. The library provides data
+ structures and algorithms for kinematic and dynamic applications in robotics
+ and computer animation.
+ DART is distinguished by it's accuracy and stability due to its use of
+ generalized coordinates to represent articulated rigid body systems and
+ computation of Lagrange's equations derived from D.Alembert's principle to
+ describe the dynamics of motion.
+ For developers, in contrast to many popular physics engines which view the
+ simulator as a black box, DART gives full access to internal kinematic and
+ dynamic quantities, such as the mass matrix, Coriolis and centrifugal forces,
+ transformation matrices and their derivatives. DART also provides efficient
+ computation of Jacobian matrices for arbitrary body points and coordinate
+ frames. Contact and collision are handled using an implicit time-stepping,
+ velocity-based LCP (linear-complementarity problem) to guarantee
+ non-penetration, directional friction, and approximated Coulomb friction cone
+ conditions. For collision detection, DART uses FCL developed by Willow Garage
+ and the UNC Gamma Lab.
+ DART has applications in robotics and computer animation because it features a
+ multibody dynamic simulator and tools for control and motion planning.
+ Multibody dynamic simulation in DART is an extension of RTQL8, an open source
+ software created by the Georgia Tech Graphics Lab.
+
+Package: libdart6-collision-ode-dev-nightly
+Section: libdevel
+Architecture: any
+Pre-Depends: ${misc:Pre-Depends}
+Depends: ${misc:Depends},
+         libdart6-dev-nightly,
+         libdart6-collision-ode-nightly (= ${binary:Version}),
+         libode-dev
+Conflicts: libdart6-collision-ode-dev
+Description: Dynamic Animation and Robotics Toolkit - Utils Component Development Files
+ DART is a collaborative, cross-platform, open source library created by the
+ Georgia Tech Graphics Lab and Humanoid Robotics Lab. The library provides data
+ structures and algorithms for kinematic and dynamic applications in robotics
+ and computer animation.
+ DART is distinguished by it's accuracy and stability due to its use of
+ generalized coordinates to represent articulated rigid body systems and
+ computation of Lagrange's equations derived from D.Alembert's principle to
+ describe the dynamics of motion.
+ For developers, in contrast to many popular physics engines which view the
+ simulator as a black box, DART gives full access to internal kinematic and
+ dynamic quantities, such as the mass matrix, Coriolis and centrifugal forces,
+ transformation matrices and their derivatives. DART also provides efficient
+ computation of Jacobian matrices for arbitrary body points and coordinate
+ frames. Contact and collision are handled using an implicit time-stepping,
+ velocity-based LCP (linear-complementarity problem) to guarantee
+ non-penetration, directional friction, and approximated Coulomb friction cone
+ conditions. For collision detection, DART uses FCL developed by Willow Garage
+ and the UNC Gamma Lab.
+ DART has applications in robotics and computer animation because it features a
+ multibody dynamic simulator and tools for control and motion planning.
+ Multibody dynamic simulation in DART is an extension of RTQL8, an open source
+ software created by the Georgia Tech Graphics Lab.
+
+Package: libdart6-planning-nightly
+Section: libs
+Architecture: any
+Pre-Depends: ${misc:Pre-Depends}
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Conflicts: libdart6-planning
+Description: Dynamic Animation and Robotics Toolkit - Planning Component Shared Library
+ DART is a collaborative, cross-platform, open source library created by the
+ Georgia Tech Graphics Lab and Humanoid Robotics Lab. The library provides data
+ structures and algorithms for kinematic and dynamic applications in robotics
+ and computer animation.
+ DART is distinguished by it's accuracy and stability due to its use of
+ generalized coordinates to represent articulated rigid body systems and
+ computation of Lagrange's equations derived from D.Alembert's principle to
+ describe the dynamics of motion.
+ For developers, in contrast to many popular physics engines which view the
+ simulator as a black box, DART gives full access to internal kinematic and
+ dynamic quantities, such as the mass matrix, Coriolis and centrifugal forces,
+ transformation matrices and their derivatives. DART also provides efficient
+ computation of Jacobian matrices for arbitrary body points and coordinate
+ frames. Contact and collision are handled using an implicit time-stepping,
+ velocity-based LCP (linear-complementarity problem) to guarantee
+ non-penetration, directional friction, and approximated Coulomb friction cone
+ conditions. For collision detection, DART uses FCL developed by Willow Garage
+ and the UNC Gamma Lab.
+ DART has applications in robotics and computer animation because it features a
+ multibody dynamic simulator and tools for control and motion planning.
+ Multibody dynamic simulation in DART is an extension of RTQL8, an open source
+ software created by the Georgia Tech Graphics Lab.
+
+Package: libdart6-planning-dev-nightly
+Section: libdevel
+Architecture: any
+Pre-Depends: ${misc:Pre-Depends}
+Depends: ${misc:Depends},
+         libdart6-dev-nightly,
+         libdart6-planning-nightly (= ${binary:Version}),
+         libflann-dev,
+         liblz4-dev
+Conflicts: libdart6-planning-dev
+Description: Dynamic Animation and Robotics Toolkit - Planning Component Development Files
+ DART is a collaborative, cross-platform, open source library created by the
+ Georgia Tech Graphics Lab and Humanoid Robotics Lab. The library provides data
+ structures and algorithms for kinematic and dynamic applications in robotics
+ and computer animation.
+ DART is distinguished by it's accuracy and stability due to its use of
+ generalized coordinates to represent articulated rigid body systems and
+ computation of Lagrange's equations derived from D.Alembert's principle to
+ describe the dynamics of motion.
+ For developers, in contrast to many popular physics engines which view the
+ simulator as a black box, DART gives full access to internal kinematic and
+ dynamic quantities, such as the mass matrix, Coriolis and centrifugal forces,
+ transformation matrices and their derivatives. DART also provides efficient
+ computation of Jacobian matrices for arbitrary body points and coordinate
+ frames. Contact and collision are handled using an implicit time-stepping,
+ velocity-based LCP (linear-complementarity problem) to guarantee
+ non-penetration, directional friction, and approximated Coulomb friction cone
+ conditions. For collision detection, DART uses FCL developed by Willow Garage
+ and the UNC Gamma Lab.
+ DART has applications in robotics and computer animation because it features a
+ multibody dynamic simulator and tools for control and motion planning.
+ Multibody dynamic simulation in DART is an extension of RTQL8, an open source
+ software created by the Georgia Tech Graphics Lab.
+
+Package: libdart6-utils-nightly
+Section: libs
+Architecture: any
+Pre-Depends: ${misc:Pre-Depends}
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Conflicts: libdart6-utils
+Description: Dynamic Animation and Robotics Toolkit - Utils Component Shared Library
+ DART is a collaborative, cross-platform, open source library created by the
+ Georgia Tech Graphics Lab and Humanoid Robotics Lab. The library provides data
+ structures and algorithms for kinematic and dynamic applications in robotics
+ and computer animation.
+ DART is distinguished by it's accuracy and stability due to its use of
+ generalized coordinates to represent articulated rigid body systems and
+ computation of Lagrange's equations derived from D.Alembert's principle to
+ describe the dynamics of motion.
+ For developers, in contrast to many popular physics engines which view the
+ simulator as a black box, DART gives full access to internal kinematic and
+ dynamic quantities, such as the mass matrix, Coriolis and centrifugal forces,
+ transformation matrices and their derivatives. DART also provides efficient
+ computation of Jacobian matrices for arbitrary body points and coordinate
+ frames. Contact and collision are handled using an implicit time-stepping,
+ velocity-based LCP (linear-complementarity problem) to guarantee
+ non-penetration, directional friction, and approximated Coulomb friction cone
+ conditions. For collision detection, DART uses FCL developed by Willow Garage
+ and the UNC Gamma Lab.
+ DART has applications in robotics and computer animation because it features a
+ multibody dynamic simulator and tools for control and motion planning.
+ Multibody dynamic simulation in DART is an extension of RTQL8, an open source
+ software created by the Georgia Tech Graphics Lab.
+
+Package: libdart6-utils-dev-nightly
+Section: libdevel
+Architecture: any
+Pre-Depends: ${misc:Pre-Depends}
+Depends: ${misc:Depends},
+         libdart6-dev-nightly,
+         libdart6-collision-bullet-dev-nightly,
+         libdart6-utils-nightly (= ${binary:Version}),
+         libtinyxml-dev,
+         libtinyxml2-dev
+Conflicts: libdart6-utils-dev
+Description: Dynamic Animation and Robotics Toolkit - Utils Component Development Files
+ DART is a collaborative, cross-platform, open source library created by the
+ Georgia Tech Graphics Lab and Humanoid Robotics Lab. The library provides data
+ structures and algorithms for kinematic and dynamic applications in robotics
+ and computer animation.
+ DART is distinguished by it's accuracy and stability due to its use of
+ generalized coordinates to represent articulated rigid body systems and
+ computation of Lagrange's equations derived from D.Alembert's principle to
+ describe the dynamics of motion.
+ For developers, in contrast to many popular physics engines which view the
+ simulator as a black box, DART gives full access to internal kinematic and
+ dynamic quantities, such as the mass matrix, Coriolis and centrifugal forces,
+ transformation matrices and their derivatives. DART also provides efficient
+ computation of Jacobian matrices for arbitrary body points and coordinate
+ frames. Contact and collision are handled using an implicit time-stepping,
+ velocity-based LCP (linear-complementarity problem) to guarantee
+ non-penetration, directional friction, and approximated Coulomb friction cone
+ conditions. For collision detection, DART uses FCL developed by Willow Garage
+ and the UNC Gamma Lab.
+ DART has applications in robotics and computer animation because it features a
+ multibody dynamic simulator and tools for control and motion planning.
+ Multibody dynamic simulation in DART is an extension of RTQL8, an open source
+ software created by the Georgia Tech Graphics Lab.
+
+Package: libdart6-utils-urdf-nightly
+Section: libs
+Architecture: any
+Pre-Depends: ${misc:Pre-Depends}
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Conflicts: libdart6-utils-urdf
+Description: Dynamic Animation and Robotics Toolkit - Utils Component Shared Library
+ DART is a collaborative, cross-platform, open source library created by the
+ Georgia Tech Graphics Lab and Humanoid Robotics Lab. The library provides data
+ structures and algorithms for kinematic and dynamic applications in robotics
+ and computer animation.
+ DART is distinguished by it's accuracy and stability due to its use of
+ generalized coordinates to represent articulated rigid body systems and
+ computation of Lagrange's equations derived from D.Alembert's principle to
+ describe the dynamics of motion.
+ For developers, in contrast to many popular physics engines which view the
+ simulator as a black box, DART gives full access to internal kinematic and
+ dynamic quantities, such as the mass matrix, Coriolis and centrifugal forces,
+ transformation matrices and their derivatives. DART also provides efficient
+ computation of Jacobian matrices for arbitrary body points and coordinate
+ frames. Contact and collision are handled using an implicit time-stepping,
+ velocity-based LCP (linear-complementarity problem) to guarantee
+ non-penetration, directional friction, and approximated Coulomb friction cone
+ conditions. For collision detection, DART uses FCL developed by Willow Garage
+ and the UNC Gamma Lab.
+ DART has applications in robotics and computer animation because it features a
+ multibody dynamic simulator and tools for control and motion planning.
+ Multibody dynamic simulation in DART is an extension of RTQL8, an open source
+ software created by the Georgia Tech Graphics Lab.
+
+Package: libdart6-utils-urdf-dev-nightly
+Section: libdevel
+Architecture: any
+Pre-Depends: ${misc:Pre-Depends}
+Depends: ${misc:Depends},
+         libdart6-dev-nightly,
+         libdart6-utils-dev-nightly,
+         libdart6-utils-urdf-nightly (= ${binary:Version}),
+         liburdfdom-dev
+Conflicts: libdart6-utils-urdf-dev
+Description: Dynamic Animation and Robotics Toolkit - Utils Component Development Files
+ DART is a collaborative, cross-platform, open source library created by the
+ Georgia Tech Graphics Lab and Humanoid Robotics Lab. The library provides data
+ structures and algorithms for kinematic and dynamic applications in robotics
+ and computer animation.
+ DART is distinguished by it's accuracy and stability due to its use of
+ generalized coordinates to represent articulated rigid body systems and
+ computation of Lagrange's equations derived from D.Alembert's principle to
+ describe the dynamics of motion.
+ For developers, in contrast to many popular physics engines which view the
+ simulator as a black box, DART gives full access to internal kinematic and
+ dynamic quantities, such as the mass matrix, Coriolis and centrifugal forces,
+ transformation matrices and their derivatives. DART also provides efficient
+ computation of Jacobian matrices for arbitrary body points and coordinate
+ frames. Contact and collision are handled using an implicit time-stepping,
+ velocity-based LCP (linear-complementarity problem) to guarantee
+ non-penetration, directional friction, and approximated Coulomb friction cone
+ conditions. For collision detection, DART uses FCL developed by Willow Garage
+ and the UNC Gamma Lab.
+ DART has applications in robotics and computer animation because it features a
+ multibody dynamic simulator and tools for control and motion planning.
+ Multibody dynamic simulation in DART is an extension of RTQL8, an open source
+ software created by the Georgia Tech Graphics Lab.
+
+Package: libdart6-gui-nightly
+Section: libs
+Architecture: any
+Pre-Depends: ${misc:Pre-Depends}
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Conflicts: libdart6-gui
+Description: Dynamic Animation and Robotics Toolkit - GUI Component Shared Library
+ DART is a collaborative, cross-platform, open source library created by the
+ Georgia Tech Graphics Lab and Humanoid Robotics Lab. The library provides data
+ structures and algorithms for kinematic and dynamic applications in robotics
+ and computer animation.
+ DART is distinguished by it's accuracy and stability due to its use of
+ generalized coordinates to represent articulated rigid body systems and
+ computation of Lagrange's equations derived from D.Alembert's principle to
+ describe the dynamics of motion.
+ For developers, in contrast to many popular physics engines which view the
+ simulator as a black box, DART gives full access to internal kinematic and
+ dynamic quantities, such as the mass matrix, Coriolis and centrifugal forces,
+ transformation matrices and their derivatives. DART also provides efficient
+ computation of Jacobian matrices for arbitrary body points and coordinate
+ frames. Contact and collision are handled using an implicit time-stepping,
+ velocity-based LCP (linear-complementarity problem) to guarantee
+ non-penetration, directional friction, and approximated Coulomb friction cone
+ conditions. For collision detection, DART uses FCL developed by Willow Garage
+ and the UNC Gamma Lab.
+ DART has applications in robotics and computer animation because it features a
+ multibody dynamic simulator and tools for control and motion planning.
+ Multibody dynamic simulation in DART is an extension of RTQL8, an open source
+ software created by the Georgia Tech Graphics Lab.
+
+Package: libdart6-gui-dev-nightly
+Section: libdevel
+Architecture: any
+Pre-Depends: ${misc:Pre-Depends}
+Depends: ${misc:Depends},
+         libdart6-utils-dev-nightly,
+         libdart6-gui-nightly (= ${binary:Version}),
+         libdart6-external-imgui-dev-nightly,
+         libdart6-external-lodepng-dev-nightly,
+         freeglut3-dev,
+         libxi-dev,
+         libxmu-dev
+Conflicts: libdart6-gui-dev
+Description: Dynamic Animation and Robotics Toolkit - GUI Component Development Files
+ DART is a collaborative, cross-platform, open source library created by the
+ Georgia Tech Graphics Lab and Humanoid Robotics Lab. The library provides data
+ structures and algorithms for kinematic and dynamic applications in robotics
+ and computer animation.
+ DART is distinguished by it's accuracy and stability due to its use of
+ generalized coordinates to represent articulated rigid body systems and
+ computation of Lagrange's equations derived from D.Alembert's principle to
+ describe the dynamics of motion.
+ For developers, in contrast to many popular physics engines which view the
+ simulator as a black box, DART gives full access to internal kinematic and
+ dynamic quantities, such as the mass matrix, Coriolis and centrifugal forces,
+ transformation matrices and their derivatives. DART also provides efficient
+ computation of Jacobian matrices for arbitrary body points and coordinate
+ frames. Contact and collision are handled using an implicit time-stepping,
+ velocity-based LCP (linear-complementarity problem) to guarantee
+ non-penetration, directional friction, and approximated Coulomb friction cone
+ conditions. For collision detection, DART uses FCL developed by Willow Garage
+ and the UNC Gamma Lab.
+ DART has applications in robotics and computer animation because it features a
+ multibody dynamic simulator and tools for control and motion planning.
+ Multibody dynamic simulation in DART is an extension of RTQL8, an open source
+ software created by the Georgia Tech Graphics Lab.
+
+Package: libdart6-gui-osg-nightly
+Section: libs
+Architecture: any
+Pre-Depends: ${misc:Pre-Depends}
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Conflicts: libdart6-gui-osg
+Description: Dynamic Animation and Robotics Toolkit - GUI-osg Component Shared Library
+ DART is a collaborative, cross-platform, open source library created by the
+ Georgia Tech Graphics Lab and Humanoid Robotics Lab. The library provides data
+ structures and algorithms for kinematic and dynamic applications in robotics
+ and computer animation.
+ DART is distinguished by it's accuracy and stability due to its use of
+ generalized coordinates to represent articulated rigid body systems and
+ computation of Lagrange's equations derived from D.Alembert's principle to
+ describe the dynamics of motion.
+ For developers, in contrast to many popular physics engines which view the
+ simulator as a black box, DART gives full access to internal kinematic and
+ dynamic quantities, such as the mass matrix, Coriolis and centrifugal forces,
+ transformation matrices and their derivatives. DART also provides efficient
+ computation of Jacobian matrices for arbitrary body points and coordinate
+ frames. Contact and collision are handled using an implicit time-stepping,
+ velocity-based LCP (linear-complementarity problem) to guarantee
+ non-penetration, directional friction, and approximated Coulomb friction cone
+ conditions. For collision detection, DART uses FCL developed by Willow Garage
+ and the UNC Gamma Lab.
+ DART has applications in robotics and computer animation because it features a
+ multibody dynamic simulator and tools for control and motion planning.
+ Multibody dynamic simulation in DART is an extension of RTQL8, an open source
+ software created by the Georgia Tech Graphics Lab.
+
+Package: libdart6-gui-osg-dev-nightly
+Section: libdevel
+Architecture: any
+Pre-Depends: ${misc:Pre-Depends}
+Depends: ${misc:Depends},
+         libdart6-gui-dev-nightly,
+         libdart6-gui-osg-nightly (= ${binary:Version}),
+         libopenthreads-dev,
+         libopenscenegraph-dev
+Conflicts: libdart6-gui-osg-dev
+Description: Dynamic Animation and Robotics Toolkit - GUI-osg Component Development Files
+ DART is a collaborative, cross-platform, open source library created by the
+ Georgia Tech Graphics Lab and Humanoid Robotics Lab. The library provides data
+ structures and algorithms for kinematic and dynamic applications in robotics
+ and computer animation.
+ DART is distinguished by it's accuracy and stability due to its use of
+ generalized coordinates to represent articulated rigid body systems and
+ computation of Lagrange's equations derived from D.Alembert's principle to
+ describe the dynamics of motion.
+ For developers, in contrast to many popular physics engines which view the
+ simulator as a black box, DART gives full access to internal kinematic and
+ dynamic quantities, such as the mass matrix, Coriolis and centrifugal forces,
+ transformation matrices and their derivatives. DART also provides efficient
+ computation of Jacobian matrices for arbitrary body points and coordinate
+ frames. Contact and collision are handled using an implicit time-stepping,
+ velocity-based LCP (linear-complementarity problem) to guarantee
+ non-penetration, directional friction, and approximated Coulomb friction cone
+ conditions. For collision detection, DART uses FCL developed by Willow Garage
+ and the UNC Gamma Lab.
+ DART has applications in robotics and computer animation because it features a
+ multibody dynamic simulator and tools for control and motion planning.
+ Multibody dynamic simulation in DART is an extension of RTQL8, an open source
+ software created by the Georgia Tech Graphics Lab.
+
+Package: dart6-data-nightly
+Architecture: all
+Depends: ${misc:Depends}
+Conflicts: dart6-data
+Description: Dynamic Animation and Robotics Toolkit - GUI-osg Component Development Files
+ DART is a collaborative, cross-platform, open source library created by the
+ Georgia Tech Graphics Lab and Humanoid Robotics Lab. The library provides data
+ structures and algorithms for kinematic and dynamic applications in robotics
+ and computer animation.
+ DART is distinguished by it's accuracy and stability due to its use of
+ generalized coordinates to represent articulated rigid body systems and
+ computation of Lagrange's equations derived from D.Alembert's principle to
+ describe the dynamics of motion.
+ For developers, in contrast to many popular physics engines which view the
+ simulator as a black box, DART gives full access to internal kinematic and
+ dynamic quantities, such as the mass matrix, Coriolis and centrifugal forces,
+ transformation matrices and their derivatives. DART also provides efficient
+ computation of Jacobian matrices for arbitrary body points and coordinate
+ frames. Contact and collision are handled using an implicit time-stepping,
+ velocity-based LCP (linear-complementarity problem) to guarantee
+ non-penetration, directional friction, and approximated Coulomb friction cone
+ conditions. For collision detection, DART uses FCL developed by Willow Garage
+ and the UNC Gamma Lab.
+ DART has applications in robotics and computer animation because it features a
+ multibody dynamic simulator and tools for control and motion planning.
+ Multibody dynamic simulation in DART is an extension of RTQL8, an open source
+ software created by the Georgia Tech Graphics Lab.
+ .
+ This package contains data for the DART applications.
+
+Package: dart6-examples-nightly
+Architecture: all
+Depends: ${misc:Depends},
+         dart6-data-nightly
+Conflicts: dart6-examples
+Description: Dynamic Animation and Robotics Toolkit - GUI-osg Component Development Files
+ DART is a collaborative, cross-platform, open source library created by the
+ Georgia Tech Graphics Lab and Humanoid Robotics Lab. The library provides data
+ structures and algorithms for kinematic and dynamic applications in robotics
+ and computer animation.
+ DART is distinguished by it's accuracy and stability due to its use of
+ generalized coordinates to represent articulated rigid body systems and
+ computation of Lagrange's equations derived from D.Alembert's principle to
+ describe the dynamics of motion.
+ For developers, in contrast to many popular physics engines which view the
+ simulator as a black box, DART gives full access to internal kinematic and
+ dynamic quantities, such as the mass matrix, Coriolis and centrifugal forces,
+ transformation matrices and their derivatives. DART also provides efficient
+ computation of Jacobian matrices for arbitrary body points and coordinate
+ frames. Contact and collision are handled using an implicit time-stepping,
+ velocity-based LCP (linear-complementarity problem) to guarantee
+ non-penetration, directional friction, and approximated Coulomb friction cone
+ conditions. For collision detection, DART uses FCL developed by Willow Garage
+ and the UNC Gamma Lab.
+ DART has applications in robotics and computer animation because it features a
+ multibody dynamic simulator and tools for control and motion planning.
+ Multibody dynamic simulation in DART is an extension of RTQL8, an open source
+ software created by the Georgia Tech Graphics Lab.
+ .
+ This package contains examples from the DART source.
+
+Package: dart6-tutorials-nightly
+Architecture: all
+Depends: ${misc:Depends},
+         dart6-data-nightly
+Conflicts: dart6-tutorials
+Description: Dynamic Animation and Robotics Toolkit - GUI-osg Component Development Files
+ DART is a collaborative, cross-platform, open source library created by the
+ Georgia Tech Graphics Lab and Humanoid Robotics Lab. The library provides data
+ structures and algorithms for kinematic and dynamic applications in robotics
+ and computer animation.
+ DART is distinguished by it's accuracy and stability due to its use of
+ generalized coordinates to represent articulated rigid body systems and
+ computation of Lagrange's equations derived from D.Alembert's principle to
+ describe the dynamics of motion.
+ For developers, in contrast to many popular physics engines which view the
+ simulator as a black box, DART gives full access to internal kinematic and
+ dynamic quantities, such as the mass matrix, Coriolis and centrifugal forces,
+ transformation matrices and their derivatives. DART also provides efficient
+ computation of Jacobian matrices for arbitrary body points and coordinate
+ frames. Contact and collision are handled using an implicit time-stepping,
+ velocity-based LCP (linear-complementarity problem) to guarantee
+ non-penetration, directional friction, and approximated Coulomb friction cone
+ conditions. For collision detection, DART uses FCL developed by Willow Garage
+ and the UNC Gamma Lab.
+ DART has applications in robotics and computer animation because it features a
+ multibody dynamic simulator and tools for control and motion planning.
+ Multibody dynamic simulation in DART is an extension of RTQL8, an open source
+ software created by the Georgia Tech Graphics Lab.
+ .
+ This package contains tutorials from the DART source.
+
+Package: libdart6-all-dev-nightly
+Section: libdevel
+Architecture: any
+Pre-Depends: ${misc:Pre-Depends}
+Depends: ${misc:Depends},
+         libdart6-dev-nightly,
+         libdart6-planning-dev-nightly,
+         libdart6-utils-dev-nightly,
+         libdart6-utils-urdf-dev-nightly,
+         libdart6-gui-dev-nightly,
+         libdart6-gui-osg-dev-nightly,
+         libdart6-optimizer-nlopt-dev-nightly,
+         libdart6-optimizer-ipopt-dev-nightly,
+         libdart6-collision-bullet-dev-nightly,
+         libdart6-collision-ode-dev-nightly,
+         dart6-data-nightly,
+         dart6-examples-nightly,
+         dart6-tutorials-nightly,
+Conflicts: libdart6-all-dev
+Description: Dynamic Animation and Robotics Toolkit - All Development Files
+ DART is a collaborative, cross-platform, open source library created by the
+ Georgia Tech Graphics Lab and Humanoid Robotics Lab. The library provides data
+ structures and algorithms for kinematic and dynamic applications in robotics
+ and computer animation.
+ DART is distinguished by it's accuracy and stability due to its use of
+ generalized coordinates to represent articulated rigid body systems and
+ computation of Lagrange's equations derived from D.Alembert's principle to
+ describe the dynamics of motion.
+ For developers, in contrast to many popular physics engines which view the
+ simulator as a black box, DART gives full access to internal kinematic and
+ dynamic quantities, such as the mass matrix, Coriolis and centrifugal forces,
+ transformation matrices and their derivatives. DART also provides efficient
+ computation of Jacobian matrices for arbitrary body points and coordinate
+ frames. Contact and collision are handled using an implicit time-stepping,
+ velocity-based LCP (linear-complementarity problem) to guarantee
+ non-penetration, directional friction, and approximated Coulomb friction cone
+ conditions. For collision detection, DART uses FCL developed by Willow Garage
+ and the UNC Gamma Lab.
+ DART has applications in robotics and computer animation because it features a
+ multibody dynamic simulator and tools for control and motion planning.
+ Multibody dynamic simulation in DART is an extension of RTQL8, an open source
+ software created by the Georgia Tech Graphics Lab.
