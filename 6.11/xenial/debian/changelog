@@ -1,3 +1,9 @@
+dart6 (6.11.1-0~xenial) xenial; urgency=medium
+
+  * dart6 6.11.1-0 release
+
+ -- Jeongseok Lee <jslee02@gmail.com>  Tue, 19 Oct 2021 08:44:37 -0700
+
 dart6 (6.10.0-0~xenial) xenial; urgency=medium
 
   * dart6 6.10.0-0 release
