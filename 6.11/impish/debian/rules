@@ -44,7 +44,7 @@ override_dh_auto_install:
 		-DDART_VERBOSE=ON
 	dh_auto_build -- dartpy
 	# dh_auto_build -- pytest
-	make install-dartpy
+	dh_auto_install -- install-dartpy
 
 %:
 	dh $@ --buildsystem=cmake --parallel
