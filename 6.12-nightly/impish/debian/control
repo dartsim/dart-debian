@@ -792,6 +792,19 @@ Description: Dynamic Animation and Robotics Toolkit - GUI-osg Component Developm
  .
  This package contains tutorials from the DART source.
 
+Package: python3-dartpy-nightly
+Section: libs
+Architecture: any
+Depends: ${misc:Depends},
+         ${python:Depends},
+         ${shlibs:Depends},
+         dart6-data-nightly,
+         python3-numpy,
+         python3
+Conflicts: python3-dartpy
+Description: Python bindings for the Dynamic Animation and Robotics Toolkit - Shared Library
+ Python bindings for the Dynamic Animation and Robotics Toolkit.
+
 Package: libdart6-all-dev-nightly
 Section: libdevel
 Architecture: any
@@ -809,6 +822,7 @@ Depends: ${misc:Depends},
          dart6-data-nightly,
          dart6-examples-nightly,
          dart6-tutorials-nightly,
+         python3-dartpy-nightly
 Conflicts: libdart6-all-dev
 Description: Dynamic Animation and Robotics Toolkit - All Development Files
  DART is a collaborative, cross-platform, open source library created by the
