@@ -38,7 +38,7 @@ override_dh_auto_install:
 	dh_auto_configure -- \
 		-DCMAKE_BUILD_TYPE:STRING=RelWithDebInfo \
 		-DDARTPY_PYTHON_VERSION=3 \
-		-DBUILD_SHARED_LIBS=OFF \
+		-DBUILD_SHARED_LIBS=ON \
 		-DDART_VERBOSE=ON
 	dh_auto_build -- dartpy
 	# dh_auto_build -- pytest

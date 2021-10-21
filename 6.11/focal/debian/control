@@ -167,6 +167,7 @@ Pre-Depends: ${misc:Pre-Depends}
 Conflicts: libdart-core3-dev, libdart-core4-dev, libdart-core5-dev, libdart6-dev
 Depends: ${misc:Depends},
          libdart6 (= ${binary:Version}),
+         libdart6-external-convhull_3d-dev,
          libdart6-external-ikfast-dev,
          libdart6-external-odelcpsolver-dev,
          libeigen3-dev,
