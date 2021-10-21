@@ -32,12 +32,12 @@ Homepage: http://dartsim.github.io/
 Vcs-Git: git://github.com/dartsim/dart.git
 Vcs-Browser: https://github.com/dartsim/dart
 
-Package: libdart6-external-convhull_3d-dev
+Package: libdart6-external-convhull-3d-dev
 Section: libdevel
 Architecture: any
 Pre-Depends: ${misc:Pre-Depends}
 Depends: ${misc:Depends}
-Conflicts: libdart6-external-convhull_3d-dev
+Conflicts: libdart6-external-convhull-3d-dev
 Description: convhull_3d - Development
  A header only C implementation of the 3-D quickhull algorithm
 
@@ -161,7 +161,7 @@ Pre-Depends: ${misc:Pre-Depends}
 Conflicts: libdart-core3-dev, libdart-core4-dev, libdart-core5-dev, libdart6-dev
 Depends: ${misc:Depends},
          libdart6 (= ${binary:Version}),
-         libdart6-external-convhull_3d-dev,
+         libdart6-external-convhull-3d-dev,
          libdart6-external-ikfast-dev,
          libdart6-external-odelcpsolver-dev,
          libeigen3-dev,
