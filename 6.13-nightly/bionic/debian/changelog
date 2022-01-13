@@ -1,3 +1,9 @@
+dart6 (6.13.0-nightly-0~bionic) bionic; urgency=medium
+
+  * dart6 6.13.0-nightly-0 release
+
+ -- jeoslee <jeoslee@ufcd04a7664e65f.ant.amazon.com>  Thu, 13 Jan 2022 14:48:40 -0800
+
 dart6 (6.12.0-nightly-1~bionic) bionic; urgency=medium
 
   * dart6 6.12.0-nightly-1 release
