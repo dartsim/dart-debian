@@ -1,3 +1,9 @@
+dart6 (6.13.0-nightly-1~bionic) bionic; urgency=medium
+
+  * dart6 6.13.0-nightly-1 release
+
+ -- Jeongseok Lee <jslee02@gmail.com>  Sat, 15 Jan 2022 15:30:04 -0800
+
 dart6 (6.13.0-nightly-0~bionic) bionic; urgency=medium
 
   * dart6 6.13.0-nightly-0 release
