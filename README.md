@@ -14,6 +14,6 @@ $ export DEBFULLNAME=<your_fullname>  # e.g., export DEBEMAIL=Jeongseok Lee
 To update changelogs and push a commit for the changes, run:
 
 ```shell
-$ cd <dart_version_to_update>          # e.g., cd 6.12
+$ cd <dart_version_to_update>          # e.g., cd 6.13
 $ ../changelog_spawn.sh <new_version>  # e.g., ../changelog_spawn.sh 1.0.0-0
 ```
