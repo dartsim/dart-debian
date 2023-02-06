@@ -111,17 +111,57 @@ Section: libs
 Architecture: any
 Pre-Depends: ${misc:Pre-Depends}
 Depends: ${shlibs:Depends}, ${misc:Depends}
-Conflicts: libdart7
-Description: DART Common Component - Shared Library
+Conflicts: libdart7-common
+Description: DART common component - Shared Library
 
 Package: libdart7-common-dev-nightly
 Section: libdevel
 Architecture: any
 Pre-Depends: ${misc:Pre-Depends}
-Conflicts: libdart7-dev
+Conflicts: libdart7-common-dev
 Depends: ${misc:Depends},
          libdart7-common-nightly (= ${binary:Version}),
          libeigen3-dev,
          libfmt-dev,
          libspdlog-dev
-Description: DART Common Component - Development Files
+Description: DART common component - Development Files
+
+Package: libdart7-math-nightly
+Section: libs
+Architecture: any
+Pre-Depends: ${misc:Pre-Depends}
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Conflicts: libdart7-math
+Description: DART math component - Shared Library
+
+Package: libdart7-math-dev-nightly
+Section: libdevel
+Architecture: any
+Pre-Depends: ${misc:Pre-Depends}
+Conflicts: libdart7-math-dev
+Depends: ${misc:Depends},
+         libdart7-common-dev-nightly,
+         libdart7-math-nightly (= ${binary:Version}),
+         libeigen3-dev
+Description: DART math component - Development Files
+
+Package: libdart7-optimization-nightly
+Section: libs
+Architecture: any
+Pre-Depends: ${misc:Pre-Depends}
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Conflicts: libdart7-optimization
+Description: DART optimization component - Shared Library
+
+Package: libdart7-optimization-dev-nightly
+Section: libdevel
+Architecture: any
+Pre-Depends: ${misc:Pre-Depends}
+Conflicts: libdart7-optimization-dev
+Depends: ${misc:Depends},
+         libdart7-math-dev-nightly,
+         libdart7-optimization-nightly (= ${binary:Version}),
+         libeigen3-dev,
+         libnlopt-cxx-dev,
+         coinor-libipopt-dev
+Description: DART optimization component - Development Files

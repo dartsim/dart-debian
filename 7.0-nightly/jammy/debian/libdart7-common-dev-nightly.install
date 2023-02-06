@@ -1,5 +1,7 @@
-usr/include/dart/collision/bullet/*
-usr/lib/*/libdart-collision-bullet.so
-usr/share/dart/cmake/dart_common-bulletTargets.cmake
-usr/share/dart/cmake/dart_common-bulletTargets-*.cmake
-usr/share/dart/cmake/dart_common-bulletComponent.cmake
+usr/include/dart/dart.hpp
+usr/include/dart/config.hpp
+usr/include/dart/common/*/*
+usr/lib/*/libdart7-common.so
+usr/share/dart7/cmake/dart_commonTargets.cmake
+usr/share/dart7/cmake/dart_commonTargets-*.cmake
+usr/share/dart7/cmake/dart_commonComponent.cmake
