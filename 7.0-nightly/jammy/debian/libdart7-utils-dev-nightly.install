@@ -1,7 +1,7 @@
-usr/include/dart/utils/*.*
-usr/include/dart/utils/sdf/*.*
-usr/include/dart/utils/mjcf/*.*
-usr/lib/*/libdart-utils.so
-usr/share/dart/cmake/dart_utilsTargets.cmake
-usr/share/dart/cmake/dart_utilsTargets-*.cmake
-usr/share/dart/cmake/dart_utilsComponent.cmake
+usr/include/dartsim/dart7/dart/utils/*.*
+usr/include/dartsim/dart7/dart/utils/sdf/*.*
+usr/include/dartsim/dart7/dart/utils/mjcf/*.*
+usr/lib/*/libdart7-utils.so
+usr/share/dart7/cmake/dart_utilsTargets.cmake
+usr/share/dart7/cmake/dart_utilsTargets-*.cmake
+usr/share/dart7/cmake/dart_utilsComponent.cmake

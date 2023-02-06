@@ -1,4 +1,4 @@
-usr/include/dart/optimization/*/*
+usr/include/dartsim/dart7/dart/optimization/*/*
 usr/lib/*/libdart7-optimization.so
 usr/share/dart7/cmake/dart_optimizationTargets.cmake
 usr/share/dart7/cmake/dart_optimizationTargets-*.cmake

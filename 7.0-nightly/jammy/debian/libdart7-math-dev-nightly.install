@@ -1,4 +1,4 @@
-usr/include/dart/math/*/*
+usr/include/dartsim/dart7/dart/math/*/*
 usr/lib/*/libdart7-math.so
 usr/share/dart7/cmake/dart_mathTargets.cmake
 usr/share/dart7/cmake/dart_mathTargets-*.cmake
