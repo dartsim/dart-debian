@@ -165,3 +165,141 @@ Depends: ${misc:Depends},
          libnlopt-cxx-dev,
          coinor-libipopt-dev
 Description: DART optimization component - Development Files
+
+Package: libdart7-collision-nightly
+Section: libs
+Architecture: any
+Pre-Depends: ${misc:Pre-Depends}
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Conflicts: libdart7-collision
+Description: DART collision component - Shared Library
+
+Package: libdart7-collision-dev-nightly
+Section: libdevel
+Architecture: any
+Pre-Depends: ${misc:Pre-Depends}
+Conflicts: libdart7-collision-dev
+Depends: ${misc:Depends},
+         libdart7-math-dev-nightly,
+         libdart7-optimization-dev-nightly,
+         libdart7-collision-nightly (= ${binary:Version}),
+         libeigen3-dev
+Description: DART collision component - Development Files
+
+Package: libdart7-dynamics-nightly
+Section: libs
+Architecture: any
+Pre-Depends: ${misc:Pre-Depends}
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Conflicts: libdart7-dynamics
+Description: DART dynamics component - Shared Library
+
+Package: libdart7-dynamics-dev-nightly
+Section: libdevel
+Architecture: any
+Pre-Depends: ${misc:Pre-Depends}
+Conflicts: libdart7-dynamics-dev
+Depends: ${misc:Depends},
+         libdart7-math-dev-nightly,
+         libdart7-optimization-dev-nightly,
+         libdart7-collision-dev-nightly,
+         libdart7-dynamics-nightly (= ${binary:Version}),
+         libassimp-dev,
+         libbullet-dev,
+         libccd-dev,
+         libfcl-dev,
+         libode-dev,
+         liboctomap-dev
+Description: DART dynamics component - Development Files
+
+Package: libdart7-simulation-nightly
+Section: libs
+Architecture: any
+Pre-Depends: ${misc:Pre-Depends}
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Conflicts: libdart7-simulation
+Description: DART simulation component - Shared Library
+
+Package: libdart7-simulation-dev-nightly
+Section: libdevel
+Architecture: any
+Pre-Depends: ${misc:Pre-Depends}
+Conflicts: libdart7-simulation-dev
+Depends: ${misc:Depends},
+         libdart7-math-dev-nightly,
+         libdart7-optimization-dev-nightly,
+         libdart7-collision-dev-nightly,
+         libdart7-dynamics-dev-nightly,
+         libdart7-simulation-nightly (= ${binary:Version})
+Description: DART simulation component - Development Files
+
+Package: libdart7-io-nightly
+Section: libs
+Architecture: any
+Pre-Depends: ${misc:Pre-Depends}
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Conflicts: libdart7-io
+Description: DART io component - Shared Library
+
+Package: libdart7-io-dev-nightly
+Section: libdevel
+Architecture: any
+Pre-Depends: ${misc:Pre-Depends}
+Conflicts: libdart7-io-dev
+Depends: ${misc:Depends},
+         libdart7-math-dev-nightly,
+         libdart7-optimization-dev-nightly,
+         libdart7-collision-dev-nightly,
+         libdart7-dynamics-dev-nightly,
+         libdart7-simulation-dev-nightly,
+         libdart7-io-nightly (= ${binary:Version}),
+         libtinyxml-dev,
+         libtinyxml2-dev,
+         liburdfdom-dev,
+         libyaml-cpp-dev
+Description: DART io component - Development Files
+
+Package: libdart7-gui-nightly
+Section: libs
+Architecture: any
+Pre-Depends: ${misc:Pre-Depends}
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Conflicts: libdart7-gui
+Description: DART gui component - Shared Library
+
+Package: libdart7-gui-dev-nightly
+Section: libdevel
+Architecture: any
+Pre-Depends: ${misc:Pre-Depends}
+Conflicts: libdart7-gui-dev
+Depends: ${misc:Depends},
+         libdart7-math-dev-nightly,
+         libdart7-optimization-dev-nightly,
+         libdart7-collision-dev-nightly,
+         libdart7-dynamics-dev-nightly,
+         libdart7-simulation-dev-nightly,
+         libdart7-io-dev-nightly,
+         libdart7-gui-nightly (= ${binary:Version}),
+         freeglut3-dev,
+         libopenthreads-dev,
+         libopenscenegraph-dev,
+Description: DART gui component - Development Files
+
+Package: libdart7-all-dev-nightly
+Section: libdevel
+Architecture: any
+Pre-Depends: ${misc:Pre-Depends}
+Conflicts: libdart7-gui-dev
+Depends: ${misc:Depends},
+         dart7-data-nightly,
+         dart7-examples-nightly,
+         dart7-tutorials-nightly,
+         libdart7-common-dev-nightly,
+         libdart7-math-dev-nightly,
+         libdart7-optimization-dev-nightly,
+         libdart7-collision-dev-nightly,
+         libdart7-dynamics-dev-nightly,
+         libdart7-simulation-dev-nightly,
+         libdart7-io-dev-nightly,
+         libdart7-gui-nightly
+Description: DART - Development Files

@@ -2,6 +2,11 @@ usr/include/dartsim/dart7/dart/dart.hpp
 usr/include/dartsim/dart7/dart/config.hpp
 usr/include/dartsim/dart7/dart/common/*/*
 usr/lib/*/libdart7-common.so
+usr/lib/*/pkgconfig/dart7.pc
 usr/share/dart7/cmake/dart_commonTargets.cmake
 usr/share/dart7/cmake/dart_commonTargets-*.cmake
 usr/share/dart7/cmake/dart_commonComponent.cmake
+usr/share/dart7/cmake/DARTConfig.cmake
+usr/share/dart7/cmake/DARTConfigVersion.cmake
+usr/share/dart7/cmake/Find*.cmake
+usr/share/dart7/cmake/DARTFind*.cmake

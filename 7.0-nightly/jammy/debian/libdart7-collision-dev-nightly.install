@@ -1,0 +1,5 @@
+usr/include/dartsim/dart7/dart/collision/*/*
+usr/lib/*/libdart7-collision.so
+usr/share/dart7/cmake/dart_collisionTargets.cmake
+usr/share/dart7/cmake/dart_collisionTargets-*.cmake
+usr/share/dart7/cmake/dart_collisionComponent.cmake

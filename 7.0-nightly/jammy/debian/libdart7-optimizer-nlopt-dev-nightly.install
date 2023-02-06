@@ -1,5 +1,0 @@
-usr/include/dartsim/dart7/dart/optimizer/nlopt/*
-usr/lib/*/libdart7-optimizer-nlopt.so
-usr/share/dart7/cmake/dart_optimizer-nloptTargets.cmake
-usr/share/dart7/cmake/dart_optimizer-nloptTargets-*.cmake
-usr/share/dart7/cmake/dart_optimizer-nloptComponent.cmake
