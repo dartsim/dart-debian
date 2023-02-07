@@ -1,5 +1,0 @@
-usr/include/dartsim/dart7/dart/gui/osg/*
-usr/lib/*/libdart7-gui-osg.so
-usr/share/dart7/cmake/dart_gui-osgTargets.cmake
-usr/share/dart7/cmake/dart_gui-osgTargets-*.cmake
-usr/share/dart7/cmake/dart_gui-osgComponent.cmake

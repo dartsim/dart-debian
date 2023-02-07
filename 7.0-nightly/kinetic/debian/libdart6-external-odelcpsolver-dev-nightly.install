@@ -1,5 +1,0 @@
-usr/include/dartsim/dart7/dart/external/odelcpsolver/*
-usr/lib/*/libdart7-external-odelcpsolver.so
-usr/share/dart7/cmake/dart_external-odelcpsolverTargets.cmake
-usr/share/dart7/cmake/dart_external-odelcpsolverTargets-*.cmake
-usr/share/dart7/cmake/dart_external-odelcpsolverComponent.cmake
