@@ -1,4 +1,4 @@
-usr/include/dartsim/dart7/dart/simulation/*/*
+usr/include/dartsim/dart7/dart/simulation/**/*
 usr/lib/*/libdart7-simulation.so
 usr/share/dart7/cmake/dart_simulationTargets.cmake
 usr/share/dart7/cmake/dart_simulationTargets-*.cmake
