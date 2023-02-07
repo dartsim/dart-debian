@@ -30,6 +30,7 @@ override_dh_auto_install:
 	dh_auto_configure -- \
 		-DCMAKE_BUILD_TYPE:STRING=RelWithDebInfo \
 		-DDART_DOWNLOAD_DEPENDENT_PACKAGES=OFF \
+		-DDART_TREAT_WARNINGS_AS_ERRORS=OFF \
 		-DDART_VERBOSE=ON
 	dh_auto_build -- tests
 	dh_auto_test
