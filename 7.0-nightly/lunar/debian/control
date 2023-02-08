@@ -285,6 +285,26 @@ Depends: ${misc:Depends},
          libopenscenegraph-dev,
 Description: DART gui component - Development Files
 
+Package: dart7-data-nightly
+Architecture: all
+Depends: ${misc:Depends},
+         dart7-data-nightly
+Description: DART data from the DART source.
+
+Package: dart7-examples-nightly
+Architecture: all
+Depends: ${misc:Depends},
+         dart7-data-nightly
+Conflicts: dart7-data
+Description: DART examples from the DART source.
+
+Package: dart7-tutorials-nightly
+Architecture: all
+Depends: ${misc:Depends},
+         dart7-data-nightly
+Conflicts: dart7-tutorials
+Description: DART tutorials from the DART source.
+
 Package: libdart7-all-dev-nightly
 Section: libdevel
 Architecture: any
