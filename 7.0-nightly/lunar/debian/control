@@ -40,6 +40,7 @@ Vcs-Browser: https://github.com/dartsim/dart
 Package: libdart7-external-convhull-3d-dev-nightly
 Section: libdevel
 Architecture: any
+Multi-Arch: same
 Pre-Depends: ${misc:Pre-Depends}
 Depends: ${misc:Depends}
 Conflicts: libdart7-external-convhull-3d-dev
@@ -49,6 +50,7 @@ Description: convhull_3d - Development
 Package: libdart7-external-ikfast-dev-nightly
 Section: libdevel
 Architecture: any
+Multi-Arch: same
 Pre-Depends: ${misc:Pre-Depends}
 Depends: ${misc:Depends}
 Conflicts: libdart7-external-ikfast-dev
@@ -59,6 +61,7 @@ Description: IKFast - Development
 Package: libdart7-external-imgui-nightly
 Section: libs
 Architecture: any
+Multi-Arch: same
 Pre-Depends: ${misc:Pre-Depends}
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Conflicts: libdart7-external-imgui
@@ -71,6 +74,7 @@ Description: dear imgui (AKA ImGui) - Shared Files
 Package: libdart7-external-imgui-dev-nightly
 Section: libdevel
 Architecture: any
+Multi-Arch: same
 Pre-Depends: ${misc:Pre-Depends}
 Depends: ${misc:Depends},
          libdart7-external-imgui-nightly (= ${binary:Version})
@@ -84,6 +88,7 @@ Description: dear imgui (AKA ImGui) - Development
 Package: libdart7-external-odelcpsolver-nightly
 Section: libs
 Architecture: any
+Multi-Arch: same
 Pre-Depends: ${misc:Pre-Depends}
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Conflicts: libdart7-external-odelcpsolver
@@ -96,6 +101,7 @@ Description: Open Dynamics Engine - Shared Library
 Package: libdart7-external-odelcpsolver-dev-nightly
 Section: libdevel
 Architecture: any
+Multi-Arch: same
 Pre-Depends: ${misc:Pre-Depends}
 Depends: ${misc:Depends},
          libdart7-external-odelcpsolver-nightly (= ${binary:Version})
@@ -109,6 +115,7 @@ Description: Open Dynamics Engine - Development Files
 Package: libdart7-common-nightly
 Section: libs
 Architecture: any
+Multi-Arch: same
 Pre-Depends: ${misc:Pre-Depends}
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Conflicts: libdart7-common
@@ -117,6 +124,7 @@ Description: DART common component - Shared Library
 Package: libdart7-common-dev-nightly
 Section: libdevel
 Architecture: any
+Multi-Arch: same
 Pre-Depends: ${misc:Pre-Depends}
 Conflicts: libdart7-common-dev
 Depends: ${misc:Depends},
@@ -129,6 +137,7 @@ Description: DART common component - Development Files
 Package: libdart7-math-nightly
 Section: libs
 Architecture: any
+Multi-Arch: same
 Pre-Depends: ${misc:Pre-Depends}
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Conflicts: libdart7-math
@@ -137,6 +146,7 @@ Description: DART math component - Shared Library
 Package: libdart7-math-dev-nightly
 Section: libdevel
 Architecture: any
+Multi-Arch: same
 Pre-Depends: ${misc:Pre-Depends}
 Conflicts: libdart7-math-dev
 Depends: ${misc:Depends},
@@ -148,6 +158,7 @@ Description: DART math component - Development Files
 Package: libdart7-optimization-nightly
 Section: libs
 Architecture: any
+Multi-Arch: same
 Pre-Depends: ${misc:Pre-Depends}
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Conflicts: libdart7-optimization
@@ -156,6 +167,7 @@ Description: DART optimization component - Shared Library
 Package: libdart7-optimization-dev-nightly
 Section: libdevel
 Architecture: any
+Multi-Arch: same
 Pre-Depends: ${misc:Pre-Depends}
 Conflicts: libdart7-optimization-dev
 Depends: ${misc:Depends},
@@ -169,6 +181,7 @@ Description: DART optimization component - Development Files
 Package: libdart7-collision-nightly
 Section: libs
 Architecture: any
+Multi-Arch: same
 Pre-Depends: ${misc:Pre-Depends}
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Conflicts: libdart7-collision
@@ -177,6 +190,7 @@ Description: DART collision component - Shared Library
 Package: libdart7-collision-dev-nightly
 Section: libdevel
 Architecture: any
+Multi-Arch: same
 Pre-Depends: ${misc:Pre-Depends}
 Conflicts: libdart7-collision-dev
 Depends: ${misc:Depends},
@@ -189,6 +203,7 @@ Description: DART collision component - Development Files
 Package: libdart7-dynamics-nightly
 Section: libs
 Architecture: any
+Multi-Arch: same
 Pre-Depends: ${misc:Pre-Depends}
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Conflicts: libdart7-dynamics
@@ -197,6 +212,7 @@ Description: DART dynamics component - Shared Library
 Package: libdart7-dynamics-dev-nightly
 Section: libdevel
 Architecture: any
+Multi-Arch: same
 Pre-Depends: ${misc:Pre-Depends}
 Conflicts: libdart7-dynamics-dev
 Depends: ${misc:Depends},
@@ -215,6 +231,7 @@ Description: DART dynamics component - Development Files
 Package: libdart7-simulation-nightly
 Section: libs
 Architecture: any
+Multi-Arch: same
 Pre-Depends: ${misc:Pre-Depends}
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Conflicts: libdart7-simulation
@@ -223,6 +240,7 @@ Description: DART simulation component - Shared Library
 Package: libdart7-simulation-dev-nightly
 Section: libdevel
 Architecture: any
+Multi-Arch: same
 Pre-Depends: ${misc:Pre-Depends}
 Conflicts: libdart7-simulation-dev
 Depends: ${misc:Depends},
@@ -236,6 +254,7 @@ Description: DART simulation component - Development Files
 Package: libdart7-io-nightly
 Section: libs
 Architecture: any
+Multi-Arch: same
 Pre-Depends: ${misc:Pre-Depends}
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Conflicts: libdart7-io
@@ -244,6 +263,7 @@ Description: DART io component - Shared Library
 Package: libdart7-io-dev-nightly
 Section: libdevel
 Architecture: any
+Multi-Arch: same
 Pre-Depends: ${misc:Pre-Depends}
 Conflicts: libdart7-io-dev
 Depends: ${misc:Depends},
@@ -262,6 +282,7 @@ Description: DART io component - Development Files
 Package: libdart7-gui-nightly
 Section: libs
 Architecture: any
+Multi-Arch: same
 Pre-Depends: ${misc:Pre-Depends}
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Conflicts: libdart7-gui
@@ -270,6 +291,7 @@ Description: DART gui component - Shared Library
 Package: libdart7-gui-dev-nightly
 Section: libdevel
 Architecture: any
+Multi-Arch: same
 Pre-Depends: ${misc:Pre-Depends}
 Conflicts: libdart7-gui-dev
 Depends: ${misc:Depends},
@@ -285,35 +307,13 @@ Depends: ${misc:Depends},
          libopenscenegraph-dev,
 Description: DART gui component - Development Files
 
-Package: dart7-data-nightly
-Architecture: all
-Depends: ${misc:Depends},
-         dart7-data-nightly
-Description: DART data from the DART source.
-
-Package: dart7-examples-nightly
-Architecture: all
-Depends: ${misc:Depends},
-         dart7-data-nightly
-Conflicts: dart7-data
-Description: DART examples from the DART source.
-
-Package: dart7-tutorials-nightly
-Architecture: all
-Depends: ${misc:Depends},
-         dart7-data-nightly
-Conflicts: dart7-tutorials
-Description: DART tutorials from the DART source.
-
 Package: libdart7-all-dev-nightly
 Section: libdevel
 Architecture: any
+Multi-Arch: same
 Pre-Depends: ${misc:Pre-Depends}
 Conflicts: libdart7-gui-dev
 Depends: ${misc:Depends},
-         dart7-data-nightly,
-         dart7-examples-nightly,
-         dart7-tutorials-nightly,
          libdart7-common-dev-nightly,
          libdart7-math-dev-nightly,
          libdart7-optimization-dev-nightly,
@@ -322,4 +322,10 @@ Depends: ${misc:Depends},
          libdart7-simulation-dev-nightly,
          libdart7-io-dev-nightly,
          libdart7-gui-nightly
-Description: DART - Development Files
+Description: DART - All Development Files
+
+Package: dart7-doc-nightly
+Architecture: all
+Multi-Arch: foreign
+Depends: ${misc:Depends}
+Description: DART Documentation
