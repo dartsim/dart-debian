@@ -1,4 +1,3 @@
-usr/include/dartsim/dart7/dart/dart.hpp
 usr/include/dartsim/dart7/dart/config.hpp
 usr/include/dartsim/dart7/dart/common/**
 usr/lib/*/libdart7-common.so

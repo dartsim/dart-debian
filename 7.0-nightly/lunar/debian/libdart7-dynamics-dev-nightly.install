@@ -1,4 +1,4 @@
-usr/include/dartsim/dart7/dart/dynamics/**/*
+usr/include/dartsim/dart7/dart/dynamics/**
 usr/lib/*/libdart7-dynamics.so
 usr/share/dart7/cmake/dart_dynamicsTargets.cmake
 usr/share/dart7/cmake/dart_dynamicsTargets-*.cmake

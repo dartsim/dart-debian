@@ -1,4 +1,4 @@
-usr/include/dartsim/dart7/dart/io/**/*
+usr/include/dartsim/dart7/dart/io/**
 usr/lib/*/libdart7-io.so
 usr/share/dart7/cmake/dart_ioTargets.cmake
 usr/share/dart7/cmake/dart_ioTargets-*.cmake

@@ -1,4 +1,4 @@
-usr/include/dartsim/dart7/dart/gui/**/*
+usr/include/dartsim/dart7/dart/gui/**
 usr/lib/*/libdart7-gui.so
 usr/share/dart7/cmake/dart_guiTargets.cmake
 usr/share/dart7/cmake/dart_guiTargets-*.cmake
