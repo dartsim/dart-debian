@@ -1,4 +1,10 @@
-dart6 (6.14.4-1~bionic) bionic; urgency=medium
+dart6 (6.14.4-2~noble) noble; urgency=medium
+
+  * dart6 6.14.4-2 release
+
+ -- Jeongseok <jslee02@gmail.com>  Wed, 21 Aug 2024 07:55:13 -0700
+
+dart6 (6.14.4-1~noble) noble; urgency=medium
 
   * dart6 6.14.4-1 release
 
