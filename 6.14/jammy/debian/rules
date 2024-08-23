@@ -27,6 +27,7 @@ override_dh_compress:
 
 override_dh_auto_install:
 	# DART
+	export IGNORE_BULLET_DOUBLE_PRECISION_ERROR=ON; \
 	dh_auto_configure -- \
 		-DCMAKE_BUILD_TYPE:STRING=RelWithDebInfo \
 		-DBUILD_TESTING=OFF \
