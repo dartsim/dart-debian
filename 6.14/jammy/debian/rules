@@ -31,7 +31,7 @@ override_dh_auto_install:
 	dh_auto_configure -- \
 		-DCMAKE_BUILD_TYPE:STRING=RelWithDebInfo \
 		-DBUILD_TESTING=OFF \
-		-DDFETCHCONTENT_FULLY_DISCONNECTED=ON \
+		-DDART_BUILD_DARTPY=OFF \
 		-DDART_VERBOSE=ON
 	# dh_auto_build -- tests
 	dh_auto_build
