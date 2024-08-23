@@ -30,22 +30,23 @@ override_dh_auto_install:
 	dh_auto_configure -- \
 		-DCMAKE_BUILD_TYPE:STRING=RelWithDebInfo \
 		-DBUILD_TESTING=OFF \
+		-DDFETCHCONTENT_FULLY_DISCONNECTED=OFF \
 		-DDART_VERBOSE=ON
 	# dh_auto_build -- tests
 	dh_auto_build
 	# dh_auto_test
 	dh_auto_install
 	# dartpy (Python 3)
-	rm -rf obj-*-linux-gnu
-	dh_auto_configure -- \
-		-DCMAKE_BUILD_TYPE:STRING=RelWithDebInfo \
-		-DDARTPY_PYTHON_VERSION=3 \
-		-DBUILD_SHARED_LIBS=ON \
-		-DBUILD_TESTING=OFF \
-		-DDART_VERBOSE=ON
-	dh_auto_build -- dartpy
+	# rm -rf obj-*-linux-gnu
+	# dh_auto_configure -- \
+	# 	-DCMAKE_BUILD_TYPE:STRING=RelWithDebInfo \
+	# 	-DDARTPY_PYTHON_VERSION=3 \
+	# 	-DBUILD_SHARED_LIBS=ON \
+	# 	-DBUILD_TESTING=OFF \
+	# 	-DDART_VERBOSE=ON
+	# dh_auto_build -- dartpy
 	# dh_auto_build -- pytest
-	dh_auto_install
+	# dh_auto_install
 
 %:
 	dh $@ --buildsystem=cmake --parallel
